@@ -1,0 +1,32 @@
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + currentDatabase, "root", "78952");
+            Statement stmt = con.createStatement();
+            // Execute a query
+            String query = "SELECT * FROM Users"; 
+            System.out.println("Executing query: " + query);
+            ResultSet rs = stmt.executeQuery(query);
+            while (rs.next()) {
+                System.out.println("ID: " + rs.getString("ID") +
+                " firstname: " + rs.getString("firstname") + 
+                " Lastname: " + rs.getString("lastname") + 
+                " Email: " + rs.getString("email")
+                );
+            }
+
+            // Close resources
+            rs.close();
+            stmt.close();
+            con.close();
+        } 
+        catch (SQLException e) {
+            System.out.println("SQL Exception: " + e.getMessage());
+            System.out.println("SQL State: " + e.getSQLState());
+            System.out.println("Vendor Error: " + e.getErrorCode());
+        } 
+        catch (ClassNotFoundException e) {
+            System.out.println("JDBC Driver not found.");
+        } 
+        catch (Exception e) {
+            e.printStackTrace();
+        }

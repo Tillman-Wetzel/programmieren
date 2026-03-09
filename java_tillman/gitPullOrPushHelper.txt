@@ -1,0 +1,18 @@
+How to push:
+1. git status
+2. git add 'path'
+3. git status
+4. git commit -m "letzter stand"
+5. git push
+
+How to Wok in a Team:
+1. Collaborator vorher requesten.
+2. Neusten stand pullen(Kommando: git pull )
+3. Eigene Branch Erstellen(Kommando: git branch 'beliebiger name')
+4. Siehe How to Push:
+5. Terminal zeig Pull-request -> bitte Klicken
+6. Repo-Owner: Prüfen und genehmigen/ablehnen
+7. Pull-Anfragen Eigentümer: Pull-Merge.
+
+If not logged in:
+1. gh auth login 'Token from C:\Users\Tillman\Desktop'

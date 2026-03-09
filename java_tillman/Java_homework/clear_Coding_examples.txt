@@ -1,0 +1,6 @@
+ • Public class doingbackflips          --->       Public class Backflip
+ • Public class Helper                  --->       Public class HomeworkHelper
+ • Public class Grocery_Shopping        --->       Public class GroceryShopping
+ • public static final maxConnection    --->       public static final MAX_CONNECTION
+ • int maxconnection                    --->       int maxConnection
+ • String cust                          --->       String customer
