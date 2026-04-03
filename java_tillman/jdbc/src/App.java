@@ -2,7 +2,7 @@ import java.sql.*;
 import java.util.ArrayList;
 
 public class App {
-    private static String currentDatabase = "my_java_database";
+    private static String currentDatabase = "myDatabase";
     public static void main(String[] args) {
         System.out.println(getDatabaseItem("Users", new String[]{"ID", "firstname", "lastname"}, ""));
     }
@@ -61,10 +61,8 @@ public class App {
             // Execute a query
             String query = "UPDATE " + relaition + " SET " + valueToChange + " = " + newValue; 
             System.out.println("Executing query: " + query);
-            ResultSet rs = stmt.executeQuery(query);
+            stmt.executeQuery(query);
 
-            // Close resources
-            rs.close();
             stmt.close();
             con.close();
         } 
