@@ -3,17 +3,17 @@
 
 
 ## Identifiziere Objekte aus Use Case
-Aktor: Student
-Use Case: Train Vocabulary
- Train Vocabulary includes: 
-   - Get Word
-   - Check Anwser
-   - Get Answer
-   - Make Score
- Check Anwser extends from:
-  - Get Word
-  - Get Anwser
- Make Score extends from Check Anwser
+Aktor: Student  
+Use Case: Train Vocabulary  
+Train Vocabulary includes:  
+   - Get Word  
+   - Check Anwser  
+   - Get Answer  
+   - Make Score  
+Check Anwser extends from:  
+  - Get Word  
+  - Get Anwser  
+Make Score extends from Check Anwser  
 
 
 ## UML Klassendiagram nachschlagen
