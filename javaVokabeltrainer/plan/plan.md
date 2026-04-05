@@ -16,7 +16,10 @@ Check Anwser extends from:
 Make Score extends from Check Anwser  
 
 
-## UML Klassendiagram nachschlagen
+## Was ist ein Klassendiagram?
+ - Ist ein UML Diagrammtyp.  
+ - Zeigt wie ein System aufgebaut ist. Z.b. welche Klassen es gibt.
+ - Wird genutzt um Software vorm programmieren zu planen.
 
 
 ## Klassensequezdiagram
