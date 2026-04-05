@@ -1,7 +1,11 @@
-## Use Case Tabelle
+## Use Case Diagramm
 ![alt text](Use_Case.png)
 
+## Use Case Tabelle
+https://docs.google.com/spreadsheets/d/1D0gCK3bezqpNHFDjINKcEi1f9D8yA59uQ82AqhjG2IU/edit?usp=sharing
 
+
+Glossa
 ## Identifiziere Objekte aus Use Case
 Aktor: Student  
 Use Case: Train Vocabulary  
@@ -23,3 +27,11 @@ Make Score extends from Check Anwser
 
 
 ## Klassensequezdiagram
+
+
+
+
+## Weitere Use Cases:
+beende Training
+Calculiere Score
+Print Score
