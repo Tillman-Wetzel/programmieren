@@ -32,6 +32,11 @@ Make Score extends from Check Anwser
 
 
 ## Weitere Use Cases:
-beende Training
-Calculiere Score
-Print Score
+beende Training  
+Calculiere Score  
+Print Score  
+
+
+## Grenzklassen:
+Startseite:
+![alt text](Startseite_grenzklasse.png)
