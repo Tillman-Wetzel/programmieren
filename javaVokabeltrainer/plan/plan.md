@@ -45,4 +45,4 @@ Abfrage:
 Richtige Antwort abgegeben:
 ![alt text](abfrage_grenzklasse_abgegeben_richtig.png)
 Falsche Antwort abgegeben:
-![alt text](Startseite_grenzklasse.png)
+![alt text](abfrage_grenzklasse_abgegeben_falsch.png)
