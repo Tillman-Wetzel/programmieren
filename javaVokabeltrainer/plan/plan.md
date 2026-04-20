@@ -40,3 +40,9 @@ Print Score
 ## Grenzklassen:
 Startseite:
 ![alt text](Startseite_grenzklasse.png)
+Abfrage:
+![alt text](abfrage_grenzklasse.png)
+Richtige Antwort abgegeben:
+![alt text](abfrage_grenzklasse_abgegeben_richtig.png)
+Falsche Antwort abgegeben:
+![alt text](Startseite_grenzklasse.png)
