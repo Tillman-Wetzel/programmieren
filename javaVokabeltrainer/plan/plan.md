@@ -50,6 +50,18 @@ Falsche Antwort abgegeben:
 ![alt text](image(1).png)
 
 
+Steuerungsklasse:  
+
+- koordiniert GUI und Entitätsklasse  
+- Normalerweise pro Use case eine Steuerungsklasse  
+
+Grenzklasse => GUI
+
+Entitätsklasse:
+
+- verkapselt von daten und lokales verhalten  
+- werden von steuerungsklassen angesprochen  
+
 
 ## Factory Klassen
 -Klassen erstellen  
