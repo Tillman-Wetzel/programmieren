@@ -29,8 +29,6 @@ Make Score extends from Check Anwser
 ## Klassensequezdiagram
 
 
-
-
 ## Weitere Use Cases:
 beende Training  
 Calculiere Score  
@@ -46,3 +44,14 @@ Richtige Antwort abgegeben:
 ![alt text](abfrage_grenzklasse_abgegeben_richtig.png)
 Falsche Antwort abgegeben:
 ![alt text](abfrage_grenzklasse_abgegeben_falsch.png)
+
+
+## Klassentypen
+![alt text](image (1).png)
+
+
+
+## Factory Klassen
+-Klassen erstellen  
+-entitys mit den Factorys erstellen  
+-singleton  
