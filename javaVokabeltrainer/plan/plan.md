@@ -1,5 +1,5 @@
 ## Use Case Diagramm
-![alt text](Use_Case.png)
+![alt text](fotos/Use_Case.png)
 
 ## Use Case Tabelle
 https://docs.google.com/spreadsheets/d/1D0gCK3bezqpNHFDjINKcEi1f9D8yA59uQ82AqhjG2IU/edit?usp=sharing
@@ -37,17 +37,17 @@ Print Score
 
 ## Grenzklassen:
 Startseite:
-![alt text](Startseite_grenzklasse.png)
+![alt text](fotos/Startseite_grenzklasse.png)
 Abfrage:
-![alt text](abfrage_grenzklasse.png)
+![alt text](fotos/abfrage_grenzklasse.png)
 Richtige Antwort abgegeben:
-![alt text](abfrage_grenzklasse_abgegeben_richtig.png)
+![alt text](fotos/abfrage_grenzklasse_abgegeben_richtig.png)
 Falsche Antwort abgegeben:
-![alt text](abfrage_grenzklasse_abgegeben_falsch.png)
+![alt text](fotos/abfrage_grenzklasse_abgegeben_falsch.png)
 
 
 ## Klassentypen
-![alt text](image(1).png)
+![alt text](fotos/image(1).png)
 
 
 Steuerungsklasse:  
@@ -67,3 +67,4 @@ Entitätsklasse:
 -Klassen erstellen  
 -entitys mit den Factorys erstellen  
 -singleton  
+
