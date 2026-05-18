@@ -67,4 +67,3 @@ Entitätsklasse:
 -Klassen erstellen  
 -entitys mit den Factorys erstellen  
 -singleton  
-
