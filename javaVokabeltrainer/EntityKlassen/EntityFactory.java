@@ -11,9 +11,8 @@ public class EntityFactory {
         if (vokabelInstanz == null) {
             vokabelInstanz = new Vokabel();
         }
-        else {
-            myVokabelInstanz = vokabelInstanz;
-        }
+        myVokabelInstanz = vokabelInstanz;
+        
         return myVokabelInstanz;
     }
 
@@ -23,9 +22,8 @@ public class EntityFactory {
         if (antwortInstanz == null) {
             antwortInstanz = new Antwort();
         }
-        else {
-            myAntwortInstanz = antwortInstanz;
-        }
+        myAntwortInstanz = antwortInstanz;
+        
         return myAntwortInstanz;
     }
     
@@ -35,9 +33,8 @@ public class EntityFactory {
         if (scoreInstanz == null) {
             scoreInstanz = new Score();
         }
-        else {
-            myScoreInstanz = scoreInstanz;
-        }
+        myScoreInstanz = scoreInstanz;
+        
         return myScoreInstanz;
     }
 }

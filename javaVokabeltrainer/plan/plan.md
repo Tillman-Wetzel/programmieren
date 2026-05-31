@@ -67,3 +67,6 @@ Entitätsklasse:
 -Klassen erstellen  
 -entitys mit den Factorys erstellen  
 -singleton  
+
+## Klassensequenzdiagramme
+https://app.diagrams.net/#G1I3khmEmF-tyXuEcw0b93pUFfP_9mGmA5#%7B%22pageId%22%3A%22mf1-3FEs1sy0G4ElAMzl%22%7D
