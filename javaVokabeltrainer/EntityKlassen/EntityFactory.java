@@ -37,4 +37,8 @@ public class EntityFactory {
         
         return myScoreInstanz;
     }
+
+    static void erstelleVokabel(String ausgangssprache, String zielsprache) {
+        Vokabel.erstelleVokabel(ausgangssprache, zielsprache);
+    }
 }

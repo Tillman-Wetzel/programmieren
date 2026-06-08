@@ -8,4 +8,8 @@ public class Grenzklassenfactory {
     static Startansicht getStartansicht() {
         return new Startansicht();
     }
+
+    public static void erstelleStartansicht() {
+        Startansicht.erstelleStartansicht();
+    }
 }

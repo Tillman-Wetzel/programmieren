@@ -2,7 +2,6 @@ package javaVokabeltrainer.Steuerungsklassen;
 
 public class Steuerungsklassenfactory {
     public static BeendeTrainingSteuerung beendeTrainingSteuerungInstanz;
-    public static ErstelleOberflaecheSteuerung erstelleOberflaecheSteuerungInstanz;
     public static ErstelleScoreSteuerung erstelleScoreSteuerungInstanz;
     public static GetAntwortSteuerung getAntwortSteuerungInstanz;
     public static GetWortSteuerung getWortSteuerungInstanz;
@@ -19,18 +18,6 @@ public class Steuerungsklassenfactory {
         myBeendeTrainingSteuerungInstanz = beendeTrainingSteuerungInstanz;
         
         return myBeendeTrainingSteuerungInstanz; 
-    }
-
-    static ErstelleOberflaecheSteuerung getErstelleOberflaecheSteuerung() {
-        ErstelleOberflaecheSteuerung myErstelleOberflaecheSteuerungInstanz = null; 
-
-        if (erstelleOberflaecheSteuerungInstanz == null) {
-            erstelleOberflaecheSteuerungInstanz = new ErstelleOberflaecheSteuerung();
-            myErstelleOberflaecheSteuerungInstanz = erstelleOberflaecheSteuerungInstanz;
-        }
-            myErstelleOberflaecheSteuerungInstanz = erstelleOberflaecheSteuerungInstanz;
-        
-        return myErstelleOberflaecheSteuerungInstanz;
     }
 
     static ErstelleScoreSteuerung getErstelleScoreSteuerung() {
@@ -86,5 +73,9 @@ public class Steuerungsklassenfactory {
             mySammleAntwortSteuerungInstanz = sammleAntwortSteuerungInstanz;
         
         return mySammleAntwortSteuerungInstanz;
+    }
+
+    static void erstelleGetWortSteuerung() {
+        GetWortSteuerung.erstelleGetWortSteuerung();
     }
 }

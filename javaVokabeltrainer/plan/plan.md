@@ -72,4 +72,4 @@ Entitätsklasse:
 https://app.diagrams.net/#G1I3khmEmF-tyXuEcw0b93pUFfP_9mGmA5#%7B"pageId"%3A"mf1-3FEs1sy0G4ElAMzl"%7D
 
 Create Benutzeroberfläche + Get Word Klassensequenzdiagramm:
-![alt text](fotos/CreateBenutzeroberflächeUndGetWordKlassensequenzdiagramm.png)
+![alt text](fotos/GetWordKlassensequenzdiagramm.png)

@@ -1,6 +1,11 @@
 package javaVokabeltrainer.EntityKlassen;
 
 public class Vokabel {
-    private String ausgangssprache;
-    private String zielsprache;
+    private static String ausgangssprache;
+    private static String zielsprache;
+
+    static void erstelleVokabel(String ausgangsspracheTemporaer, String zielspracheTemporaer) {
+        ausgangssprache = ausgangsspracheTemporaer;
+        zielsprache = zielspracheTemporaer;
+    }
 }
