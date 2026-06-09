@@ -12,4 +12,8 @@ public class Grenzklassenfactory {
     public static void erstelleStartansicht() {
         Startansicht.erstelleStartansicht();
     }
+
+    public static void erstelleAbfrage() {
+        Abfrage.erstelleAbfrage(); 
+    }
 }

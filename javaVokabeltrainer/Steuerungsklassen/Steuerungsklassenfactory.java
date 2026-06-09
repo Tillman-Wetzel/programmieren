@@ -1,5 +1,7 @@
 package javaVokabeltrainer.Steuerungsklassen;
 
+import javaVokabeltrainer.EntityKlassen.EntityFactory;
+
 public class Steuerungsklassenfactory {
     public static BeendeTrainingSteuerung beendeTrainingSteuerungInstanz;
     public static ErstelleScoreSteuerung erstelleScoreSteuerungInstanz;
@@ -75,7 +77,7 @@ public class Steuerungsklassenfactory {
         return mySammleAntwortSteuerungInstanz;
     }
 
-    static void erstelleGetWortSteuerung() {
-        GetWortSteuerung.erstelleGetWortSteuerung();
+    public static void erstelleGetWortSteuerung(String ausgangssprache, String zielsprache) {
+        EntityFactory.erstelleVokabel(ausgangssprache, zielsprache);
     }
 }
