@@ -11,8 +11,7 @@ public class Grenzklassenfactory {
 
 
     public static void erstelleStartansicht() {
-        Startansicht myStartansicht = new Startansicht();
-        myStartansicht.erstelleStartansicht();
+        Startansicht.erstelleStartansicht();
     }
 
     public static void erstelleAbfrage() {

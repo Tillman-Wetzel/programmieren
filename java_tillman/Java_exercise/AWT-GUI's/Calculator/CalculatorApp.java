@@ -143,7 +143,7 @@ public class CalculatorApp implements ActionListener{
             if(calculationMethod == '+') {
                 result = calculator.add(Integer.parseInt(this.inputOne), Integer.parseInt(this.inputTwo));
             }
-            else if(calculationMethod == '-') {
+            else if(calculationMethod == '-') {usgangssprache, zielsprache
                 result = calculator.substrakt(Integer.parseInt(this.inputOne), Integer.parseInt(this.inputTwo));
             }
 
