@@ -1,21 +1,35 @@
-package javaVokabeltrainer.Grenzklassen;
+package Grenzklassen;
 
-import javaVokabeltrainer.Steuerungsklassen.Steuerungsklassenfactory;
+import Steuerungsklassen.Steuerungsklassenfactory;
 
-public class Startansicht {
-    private static String ausgangssprache;
-    private static String zielsprache;
-    static void erstelleStartansicht() {
+import java.awt.*;
+import java.awt.event.*;
 
+public class Startansicht implements ActionListener{
+    Frame vokabeltrainerStartansicht;
+
+    Button startknopf;
+
+    Label willkommesText, ausgangssprache, zielsprache;
+
+    Choice ausgangssprache, zielsprache;
+
+    void erstelleStartansicht() {
+        new Startansicht();
     }
 
-    static void beiStartKnopfdruck() {
+    void beiStartKnopfdruck() {
         setzeSprachen();
         Steuerungsklassenfactory.erstelleGetWortSteuerung(ausgangssprache, zielsprache);
     }
 
-    static void setzeSprachen() {
-        ausgangssprache = "Englisch";
-        zielsprache = "Deutsch";
+    void setzeSprachen() {
+        
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
     }
 }

@@ -1,0 +1,1 @@
+$tellraw @a "$(UUID0) $(UUID1) $(UUID2)"

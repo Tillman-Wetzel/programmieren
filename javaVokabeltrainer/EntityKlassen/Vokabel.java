@@ -16,10 +16,10 @@ public class Vokabel {
             generiereWort();
         }
         
-        return 
+        return ausgangswort;
     }
 
     private static void generiereWort() {
-
+        //setze Die Variable ausgangswort und zielwort auf ein rausgesuchtes Wort.
     }
 }

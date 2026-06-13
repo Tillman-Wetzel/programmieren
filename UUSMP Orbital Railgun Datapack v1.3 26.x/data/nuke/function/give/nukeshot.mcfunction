@@ -1,0 +1,1 @@
+give @s fishing_rod[custom_data={nukeshot:1b},custom_name={"italic":true,"text":"nukeshot"},rarity="rare",damage=63] 1
