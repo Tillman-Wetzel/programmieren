@@ -6,3 +6,4 @@ scoreboard players set @a use_rod 0
 execute as @e[type=block_display,tag=stabshot] run function nuke:orbital_strike_cannon/activate_shots/stab
 execute as @e[type=block_display,tag=nukeshot] run function nuke:orbital_strike_cannon/activate_shots/nuke
 execute as @e[type=block_display,tag=wolfshot] run function nuke:orbital_strike_cannon/activate_shots/wolf with storage nuke:uuid
+execute as @e[type=block_display,tag=arrowshot] run function nuke:orbital_strike_cannon/activate_shots/arrow

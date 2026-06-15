@@ -1,1 +1,1 @@
-give @s fishing_rod[custom_data={arrowshot:1b},custom_name={"italic":true,"text":"Orbital Arrow Cannon"},rarity="rare",damage=63] 1
+give @s fishing_rod[custom_data={arrowshot:1b},custom_name={"italic":true,"text":"arrowshot"},rarity="rare",damage=63] 1
