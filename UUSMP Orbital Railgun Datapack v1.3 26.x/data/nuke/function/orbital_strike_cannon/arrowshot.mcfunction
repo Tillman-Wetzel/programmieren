@@ -73,3 +73,6 @@ summon minecraft:tnt ~ ~251 ~ {fuse:1}
 summon minecraft:tnt ~ ~251 ~ {fuse:1}
 summon minecraft:tnt ~ ~251 ~ {fuse:1}
 summon minecraft:tnt ~ ~251 ~ {fuse:1}
+
+
+
