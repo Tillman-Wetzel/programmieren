@@ -22,7 +22,7 @@ public class Startansicht implements ActionListener{
     }
 
     void erstelleGui() {
-        vokabeltrainerStartansicht = new Frame("Tillman's AWT Super Calculator App");
+        vokabeltrainerStartansicht = new Frame("Tillman's AWT Super Vokabeltrainer App");
         
         vokabeltrainerStartansicht.setSize(800, 600);
         vokabeltrainerStartansicht.setLayout(new GridLayout(4,3));
