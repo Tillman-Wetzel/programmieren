@@ -1,10 +1,10 @@
-package javaVokabeltrainer.Steuerungsklassen;
+package Steuerungsklassen;
 
-import javaVokabeltrainer.EntityKlassen.EntityFactory;
-import javaVokabeltrainer.EntityKlassen.Vokabel;
+import EntityKlassen.EntityFactory;
+import EntityKlassen.Vokabel;
 
 public class GetWortSteuerung {
-    static void erstelleGetWortSteuerung(String ausgangssprache, String zielsprache) {
+    GetWortSteuerung(String ausgangssprache, String zielsprache) {
         EntityFactory.erstelleVokabel(ausgangssprache, zielsprache);
     }
 

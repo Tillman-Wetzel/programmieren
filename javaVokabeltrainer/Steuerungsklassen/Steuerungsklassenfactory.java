@@ -1,6 +1,7 @@
-package javaVokabeltrainer.Steuerungsklassen;
+package Steuerungsklassen;
 
-import javaVokabeltrainer.EntityKlassen.EntityFactory;
+import EntityKlassen.EntityFactory;
+import Steuerungsklassen.GetWortSteuerung;
 
 public class Steuerungsklassenfactory {
     public static BeendeTrainingSteuerung beendeTrainingSteuerungInstanz;
@@ -44,17 +45,6 @@ public class Steuerungsklassenfactory {
         return myGetAntwortSteuerungInstanz;
     }
 
-    static GetWortSteuerung getGetWortSteuerung() {
-        GetWortSteuerung myGetWortSteuerungInstanz = null; 
-
-        if (getWortSteuerungInstanz == null) {
-            getWortSteuerungInstanz = new GetWortSteuerung();
-        }
-            myGetWortSteuerungInstanz = getWortSteuerungInstanz;
-        
-        return myGetWortSteuerungInstanz;
-    }
-
     static PruefeAntwortSteuerung getPruefeAntwortSteuerung() {
         PruefeAntwortSteuerung myPruefeAntwortSteuerungInstanz = null; 
 
@@ -77,7 +67,7 @@ public class Steuerungsklassenfactory {
         return mySammleAntwortSteuerungInstanz;
     }
 
-    public static void erstelleGetWortSteuerung(String ausgangssprache, String zielsprache) {
-        EntityFactory.erstelleVokabel(ausgangssprache, zielsprache);
+    public static GetWortSteuerung erstelleGetWortSteuerung(String ausgangssprache, String zielsprache) {
+        return new GetWortSteuerung(ausgangssprache, zielsprache);
     }
 }

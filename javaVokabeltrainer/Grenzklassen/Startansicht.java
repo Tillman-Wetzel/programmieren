@@ -25,10 +25,17 @@ public class Startansicht implements ActionListener{
         vokabeltrainerStartansicht = new Frame("Tillman's AWT Super Vokabeltrainer App");
         
         vokabeltrainerStartansicht.setSize(800, 600);
-        vokabeltrainerStartansicht.setLayout(new GridLayout(4,3));
+        vokabeltrainerStartansicht.setLayout(new GridLayout(4, 2, 10, 10));
         
         erstelleInhalt();
 
+        vokabeltrainerStartansicht.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent we) {
+                vokabeltrainerStartansicht.dispose();
+                System.exit(0);
+            }
+        });
+        
         vokabeltrainerStartansicht.setVisible(true);
     }
 
@@ -60,21 +67,15 @@ public class Startansicht implements ActionListener{
         vokabeltrainerStartansicht.add(zielspracheChoice);
 
         startknopf = new Button("Start");
+        startknopf.addActionListener(this);
         vokabeltrainerStartansicht.add(startknopf);
     }
 
-    void beiStartKnopfdruck() {
-        setzeSprachen();
-        //Steuerungsklassenfactory.erstelleGetWortSteuerung();
-    }
-
-    void setzeSprachen() {
-        
-    }
-
-    @Override
     public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
+    if (e.getSource() == startknopf) {
+        String ausgangssprache = ausgangsspracheChoice.getSelectedItem();
+        String zielsprache = zielspracheChoice.getSelectedItem();
+        Steuerungsklassenfactory.erstelleGetWortSteuerung(ausgangssprache, zielsprache);
     }
+}
 }
