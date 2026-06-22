@@ -1,4 +1,4 @@
-package javaVokabeltrainer.EntityKlassen;
+package EntityKlassen;
 
 public class Vokabel {
     private static String ausgangssprache;
@@ -6,7 +6,7 @@ public class Vokabel {
     private static String ausgangswort;
     private static String zielwort;
 
-    static void erstelleVokabel(String ausgangsspracheTemporaer, String zielspracheTemporaer) {
+    Vokabel(String ausgangsspracheTemporaer, String zielspracheTemporaer) {
         ausgangssprache = ausgangsspracheTemporaer;
         zielsprache = zielspracheTemporaer;
     }

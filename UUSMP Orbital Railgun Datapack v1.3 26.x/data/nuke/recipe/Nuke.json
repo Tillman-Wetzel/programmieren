@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    "DCD",
+    "TFT"
+  ],
+  "key": {
+    "T": { "item": "minecraft:tnt" },
+    "D": { "item": "minecraft:totem_of_undying" },
+    "C": { "item": "minecraft:end_crystal" },
+    "F": { "item": "minecraft:fishing_rod" }
+  },
+  "result": {
+    "id": "minecraft:fishing_rod",
+    "count": 1
+  }
+}

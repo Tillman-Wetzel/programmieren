@@ -1,4 +1,4 @@
-package javaVokabeltrainer.EntityKlassen;
+package EntityKlassen;
 
 public class EntityFactory {
     public static Vokabel vokabelInstanz;
