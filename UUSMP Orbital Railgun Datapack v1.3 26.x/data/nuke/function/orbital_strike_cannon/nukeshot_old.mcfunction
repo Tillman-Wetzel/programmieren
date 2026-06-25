@@ -434,6 +434,7 @@ summon tnt ~ ~50 ~ {fuse:80,Motion:[1.05,0.0,0.345]}
 summon tnt ~ ~50 ~ {fuse:80,Motion:[1.003,0.0,0.416]}
 summon tnt ~ ~50 ~ {fuse:80,Motion:[0.949,0.0,0.484]}
 
+
 # Ring 9 - Perfectly Circular High Density
 summon tnt ~ ~50 ~ {fuse:80,Motion:[1.4,0.0,0.0]}
 summon tnt ~ ~50 ~ {fuse:80,Motion:[1.393,0.0,0.146]}

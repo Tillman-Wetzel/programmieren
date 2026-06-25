@@ -301,10 +301,8 @@ summon tnt ~ ~50 ~ {fuse:80,Motion:[1.497,0.0,-0.401]}
 summon tnt ~ ~50 ~ {fuse:80,Motion:[1.527,0.0,-0.269]}
 summon tnt ~ ~50 ~ {fuse:80,Motion:[1.544,0.0,-0.135]}
 
-
-
-
-
+tag PhoenixFlames64 add orb
+tag VoidArxher add orb
 # Extra filler for ring 0.8 (set 1)
 summon tnt ~ ~50 ~ {fuse:80,Motion:[0.0,0.0,0.8]}
 summon tnt ~ ~50 ~ {fuse:80,Motion:[0.4,0.0,0.693]}

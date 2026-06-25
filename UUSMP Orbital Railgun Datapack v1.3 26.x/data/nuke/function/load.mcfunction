@@ -7,3 +7,4 @@ scoreboard objectives add arrowshot_timer dummy
 scoreboard objectives add rod_delay dummy
 #
 scoreboard objectives add player_uuid dummy
+
