@@ -60,7 +60,7 @@ public class Abfrage implements ActionListener{
         wortLabel.setFont(new Font("Arial", Font.BOLD, 22));
         vokabeltrainerAnsicht.add(wortLabel);
 
-        eingabeFeld = new TextField("Hier Wort eingeben");
+        eingabeFeld = new TextField();
         vokabeltrainerAnsicht.add(eingabeFeld);
 
         abgebenButton = new Button("Abgeben");
