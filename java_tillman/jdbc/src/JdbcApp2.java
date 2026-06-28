@@ -14,7 +14,7 @@ public class JdbcApp2 {
     }
 
     @SuppressWarnings({"ConvertToTryWithResources", "CallToPrintStackTrace"})
-    public static ArrayList<String> runCommand(String command) {
+    public static ArrayList<String> runCommand(String command, String returnCommand) {
         
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -23,7 +23,7 @@ public class JdbcApp2 {
             String query = command; 
             ResultSet rs = stmt.executeQuery(query);
             while (rs.next()) {
-                result.add("");
+                result.add(returnCommand);
             }
 
             rs.close();

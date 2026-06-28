@@ -17,15 +17,11 @@ public class Abfrage implements ActionListener{
 
     Button abgebenButton;
 
-    public static void erstelleAbfrage() {
-        
-    }
-
     public static void dreuckeNochEinWort() {
         GetWortSteuerung.getWort();
     }
 
-    void erstelleGui() {
+    void erstelleAbfrage() {
         vokabeltrainerAnsicht = new Frame("Tillman's AWT Super Vokabeltrainer");
 
         vokabeltrainerAnsicht.setSize(800, 600);
