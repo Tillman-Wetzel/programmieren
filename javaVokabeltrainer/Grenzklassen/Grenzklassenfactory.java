@@ -10,11 +10,11 @@ public class Grenzklassenfactory {
     // }
 
 
-    public static void erstelleStartansicht() {
-        Startansicht.erstelleStartansicht();
+    public static Startansicht erstelleStartansicht() {
+        return new Startansicht();
     }
 
-    public static void erstelleAbfrage() {
-        Abfrage.erstelleAbfrage(); 
+    public static Abfrage erstelleAbfrage() {
+        return new Abfrage(); 
     }
 }
