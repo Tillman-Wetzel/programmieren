@@ -11,14 +11,8 @@ public class Startansicht implements ActionListener{
     Label willkommesText, ausgangsspracheLabel, zielspracheLabel, platzhalter1;
     Choice ausgangsspracheChoice, zielspracheChoice;
 
-    static void erstelleStartansicht() {
-        Startansicht myStartansicht = new Startansicht();
-        myStartansicht.erstelleGui();
-        
-
-
-
-
+    Startansicht() {
+        this.erstelleGui();
     }
 
     void erstelleGui() {
@@ -76,6 +70,8 @@ public class Startansicht implements ActionListener{
         String ausgangssprache = ausgangsspracheChoice.getSelectedItem();
         String zielsprache = zielspracheChoice.getSelectedItem();
         Steuerungsklassenfactory.erstelleGetWortSteuerung(ausgangssprache, zielsprache);
+        Grenzklassenfactory.erstelleAbfrage(zielsprache);
+        vokabeltrainerStartansicht.setVisible(false);
     }
 }
 }

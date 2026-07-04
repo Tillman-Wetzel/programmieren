@@ -5,11 +5,11 @@ public class EntityFactory {
     public static Antwort antwortInstanz;
     public static Score scoreInstanz;
 
-    static Vokabel getVokabel() {
+    public static Vokabel erstelleVokabel(String ausgangssprache, String zielsprache) {
         Vokabel myVokabelInstanz = null; 
 
         if (vokabelInstanz == null) {
-            vokabelInstanz = new Vokabel();
+            vokabelInstanz = new Vokabel(ausgangssprache, zielsprache);
         }
         myVokabelInstanz = vokabelInstanz;
         
@@ -38,7 +38,5 @@ public class EntityFactory {
         return myScoreInstanz;
     }
 
-    public static void erstelleVokabel(String ausgangssprache, String zielsprache) {
-        Vokabel.erstelleVokabel(ausgangssprache, zielsprache);
-    }
+
 }

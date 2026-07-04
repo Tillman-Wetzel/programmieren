@@ -4,11 +4,14 @@ import EntityKlassen.EntityFactory;
 import EntityKlassen.Vokabel;
 
 public class GetWortSteuerung {
+    private Vokabel vokabel;
+
     GetWortSteuerung(String ausgangssprache, String zielsprache) {
-        EntityFactory.erstelleVokabel(ausgangssprache, zielsprache);
+        vokabel = EntityFactory.erstelleVokabel(ausgangssprache, zielsprache);
     }
 
-    public static String getWort() {
-        return Vokabel.getWort();
+    public String getWort() {
+        vokabel.generiereWort();
+        return vokabel.getAusgangswort();
     }
 }

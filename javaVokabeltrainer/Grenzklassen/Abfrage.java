@@ -1,6 +1,7 @@
 package Grenzklassen;
 
 import Steuerungsklassen.GetWortSteuerung;
+import Steuerungsklassen.Steuerungsklassenfactory;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -17,17 +18,30 @@ public class Abfrage implements ActionListener{
 
     Button abgebenButton;
 
+<<<<<<< HEAD
     public static void dreuckeNochEinWort() {
         GetWortSteuerung.getWort();
     }
 
     void erstelleAbfrage() {
+=======
+    Abfrage(String zielsprache) {
+        this.erstelleAbfrage(zielsprache);
+        
+    }
+
+    public void dreuckeNochEinWort() {
+        //getWort();
+    }
+
+    void erstelleAbfrage(String zielsprache) {
+>>>>>>> e45bd6e6c6d29fa1eecdd883e3e97185acf134c1
         vokabeltrainerAnsicht = new Frame("Tillman's AWT Super Vokabeltrainer");
 
         vokabeltrainerAnsicht.setSize(800, 600);
         vokabeltrainerAnsicht.setLayout(new GridLayout(6, 1, 10, 10));
 
-        erstelleInhalt();
+        erstelleInhalt(zielsprache);
 
         vokabeltrainerAnsicht.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent we) {
@@ -36,16 +50,19 @@ public class Abfrage implements ActionListener{
             }
         });
 
+        
+
+
         vokabeltrainerAnsicht.setVisible(true);
     }
 
-    void erstelleInhalt() {
+    void erstelleInhalt(String zielsprache) {
 
         titelLabel = new Label("Tillman's Vokabeltrainer", Label.CENTER);
         titelLabel.setFont(new Font("Arial", Font.BOLD, 28));
         vokabeltrainerAnsicht.add(titelLabel);
 
-        uebersetzenLabel = new Label("Übersetze ins Englische", Label.CENTER);
+        uebersetzenLabel = new Label("Übersetze ins " + zielsprache + "e", Label.CENTER);
         uebersetzenLabel.setFont(new Font("Arial", Font.PLAIN, 20));
         vokabeltrainerAnsicht.add(uebersetzenLabel);
 
