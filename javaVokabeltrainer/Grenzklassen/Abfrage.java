@@ -1,8 +1,5 @@
 package Grenzklassen;
 
-import Steuerungsklassen.GetWortSteuerung;
-import Steuerungsklassen.Steuerungsklassenfactory;
-
 import java.awt.*;
 import java.awt.event.*;
 
@@ -18,13 +15,6 @@ public class Abfrage implements ActionListener{
 
     Button abgebenButton;
 
-<<<<<<< HEAD
-    public static void dreuckeNochEinWort() {
-        GetWortSteuerung.getWort();
-    }
-
-    void erstelleAbfrage() {
-=======
     Abfrage(String zielsprache) {
         this.erstelleAbfrage(zielsprache);
         
@@ -35,7 +25,6 @@ public class Abfrage implements ActionListener{
     }
 
     void erstelleAbfrage(String zielsprache) {
->>>>>>> e45bd6e6c6d29fa1eecdd883e3e97185acf134c1
         vokabeltrainerAnsicht = new Frame("Tillman's AWT Super Vokabeltrainer");
 
         vokabeltrainerAnsicht.setSize(800, 600);

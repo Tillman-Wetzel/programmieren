@@ -1,0 +1,16 @@
+execute as @a if score @s use_rod matches 1.. if items entity @s weapon.mainhand fishing_rod[custom_data={stabshot:1b}] at @s run function nuke:orbital_strike_cannon/use_rod
+execute as @a if score @s use_rod matches 1.. if items entity @s weapon.mainhand fishing_rod[custom_data={nukeshot:1b}] at @s run function nuke:orbital_strike_cannon/use_rod
+execute as @a if score @s use_rod matches 1.. if items entity @s weapon.mainhand fishing_rod[custom_data={wolfshot:1b}] at @s run function nuke:orbital_strike_cannon/use_rod
+execute as @a if score @s use_rod matches 1.. if items entity @s weapon.mainhand fishing_rod[custom_data={arrowshot:1b}] at @s run function nuke:orbital_strike_cannon/use_rod
+scoreboard players set @a use_rod 0
+
+execute as @e[type=block_display,tag=stabshot] run function nuke:orbital_strike_cannon/activate_shots/stab
+execute as @e[type=block_display,tag=nukeshot] run function nuke:orbital_strike_cannon/activate_shots/nuke
+execute as @e[type=block_display,tag=wolfshot] run function nuke:orbital_strike_cannon/activate_shots/wolf with storage nuke:uuid
+execute as @e[type=block_display,tag=arrowshot] run function nuke:orbital_strike_cannon/activate_shots/arrow
+
+
+#Crafting:
+execute as @a[ nbt={Inventory:[{count: 1, Slot: 8b, id: "minecraft:spyglass"}, {count: 1, Slot: 12b, id: "minecraft:spyglass"}, {count: 32, Slot: 13b, id: "minecraft:tnt"}, {count: 1, Slot: 14b, id: "minecraft:spyglass"}, {count: 1, Slot: 21b, id: "minecraft:totem_of_undying"}, {count: 8, Slot: 22b, id: "minecraft:end_crystal"}, {count: 1, Slot: 23b, id: "minecraft:totem_of_undying"}, {count: 64, Slot: 30b, id: "minecraft:arrow"}, {components: {"minecraft:damage": 63}, count: 1, Slot: 31b, id: "minecraft:fishing_rod"}, {count: 64, Slot: 32b, id: "minecraft:arrow"}]}] run function nuke:crafting/arrowshot
+execute as @a[ nbt={Inventory:[{count: 1, Slot: 7b, id: "minecraft:totem_of_undying"}, {count: 1, Slot: 12b, id: "minecraft:spyglass"}, {count: 16, Slot: 13b, id: "minecraft:tnt"}, {count: 1, Slot: 14b, id: "minecraft:spyglass"}, {count: 1, Slot: 21b, id: "minecraft:totem_of_undying"}, {count: 6, Slot: 22b, id: "minecraft:end_crystal"}, {count: 1, Slot: 23b, id: "minecraft:totem_of_undying"}, {count: 16, Slot: 30b, id: "minecraft:tnt"}, {components: {"minecraft:damage": 63}, count: 1, Slot: 31b, id: "minecraft:fishing_rod"}, {count: 16, Slot: 32b, id: "minecraft:tnt"}]}] run function nuke:crafting/stabshot
+execute as @a[ nbt={Inventory:[{count: 12, Slot: 12b, id: "minecraft:tnt"}, {count: 16, Slot: 13b, id: "minecraft:tnt"}, {count: 12, Slot: 14b, id: "minecraft:tnt"}, {count: 1, Slot: 21b, id: "minecraft:totem_of_undying"}, {count: 4, Slot: 22b, id: "minecraft:end_crystal"}, {count: 1, Slot: 23b, id: "minecraft:totem_of_undying"}, {count: 12, Slot: 30b, id: "minecraft:tnt"}, {components: {"minecraft:damage": 63}, count: 1, Slot: 31b, id: "minecraft:fishing_rod"}, {count: 12, Slot: 32b, id: "minecraft:tnt"}]}] run function nuke:crafting/nukeshot
