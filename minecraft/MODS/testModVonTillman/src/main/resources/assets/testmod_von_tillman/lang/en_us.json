@@ -1,0 +1,17 @@
+{
+  "item.testmod_von_tillman.kaugummi": "Kaugummi",
+  "item.testmod_von_tillman.benutztes_kaugummi": "Benutztes Kaugummi",
+  "advancements.eatgum.descr": "Eat some Gum",
+  "advancements.eatgum.title": "Mmmhhf mmhf nam nam",
+  "item_group.testmod_von_tillman.tillmans_creative_tab": "Tillmans Coolste Mod",
+  "item.testmod_von_tillman.sweet_berry_tea_bag_item": "Sweetberry teabag",
+  "item.testmod_von_tillman.glow_berry_tea_bag_item": "Glowberry teabag",
+  "block.testmod_von_tillman.hot_water": "Hot Water",
+  "fluid_type.testmod_von_tillman.hot_water": "Hot Water",
+  "fluid.testmod_von_tillman.hot_water": "Hot Water",
+  "item.testmod_von_tillman.hot_water_bucket": "Hot Water Bucket",
+  "item.testmod_von_tillman.teapot": "Teapot",
+  "entity.villager.testmod_von_tillman.tea_dealer": "Tea Dealer",
+  "gamerule.testmod_von_tillman.letEveryoneFly": "Everybody can Fly",
+  "gamerule.testmod_von_tillman.letEveryoneFly.description": "Everyone has the ability to fly"
+}

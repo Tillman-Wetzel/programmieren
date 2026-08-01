@@ -1,0 +1,20 @@
+{
+  "_fv": 89,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Mmmhhf mmhf nam nam",
+    "achievementDescription": "Eat some Gum",
+    "achievementIcon": "CUSTOM:Kaugummi",
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": "husbandry/balanced_diet",
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"item_consumed\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:Kaugummi</field></block></value></block><shadow type=\"custom_trigger\"></shadow></next></block></xml>"
+  }
+}

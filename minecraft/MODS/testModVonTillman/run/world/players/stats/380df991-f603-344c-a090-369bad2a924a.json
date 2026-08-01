@@ -1,0 +1,42 @@
+{
+  "stats": {
+    "minecraft:killed_by": {
+      "minecraft:creeper": 1
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 3046,
+      "minecraft:walk_one_cm": 14854,
+      "minecraft:walk_under_water_one_cm": 7926,
+      "minecraft:damage_taken": 318,
+      "minecraft:play_time": 17086,
+      "minecraft:jump": 80,
+      "minecraft:time_since_death": 0,
+      "minecraft:sprint_one_cm": 2007,
+      "minecraft:fall_one_cm": 3895,
+      "minecraft:total_world_time": 17086,
+      "minecraft:fly_one_cm": 19863,
+      "minecraft:walk_on_water_one_cm": 7671,
+      "minecraft:crouch_one_cm": 627,
+      "minecraft:sneak_time": 435,
+      "minecraft:deaths": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:dirt": 2,
+      "minecraft:kelp": 10
+    },
+    "minecraft:used": {
+      "minecraft:stone": 53,
+      "minecraft:bucket": 7,
+      "testmod_von_tillman:hot_water_bucket": 44,
+      "minecraft:dirt": 1
+    },
+    "minecraft:mined": {
+      "minecraft:kelp_plant": 2,
+      "minecraft:tall_seagrass": 8,
+      "minecraft:seagrass": 17,
+      "minecraft:dirt": 2,
+      "minecraft:birch_leaves": 3
+    }
+  },
+  "DataVersion": 4790
+}

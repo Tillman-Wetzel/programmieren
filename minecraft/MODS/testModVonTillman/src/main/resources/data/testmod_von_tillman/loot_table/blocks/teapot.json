@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "testmod_von_tillman:blocks/teapot",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "testmod_von_tillman:teapot"
+        }
+      ]
+    }
+  ]
+}

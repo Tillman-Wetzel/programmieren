@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " b "
+  ],
+  "key": {
+    "a": "minecraft:string",
+    "b": "minecraft:paper",
+    "c": "minecraft:sweet_berries"
+  },
+  "result": {
+    "id": "testmod_von_tillman:sweet_berry_tea_bag_item",
+    "count": 1
+  }
+}

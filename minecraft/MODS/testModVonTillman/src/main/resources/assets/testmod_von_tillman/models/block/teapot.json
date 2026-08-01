@@ -1,0 +1,10 @@
+{
+  "parent": "testmod_von_tillman:custom/teapot",
+  "textures": {
+    "all": "testmod_von_tillman:block/red",
+    "particle": "testmod_von_tillman:block/red",
+    "0": "testmod_von_tillman:block/red",
+    "1": "testmod_von_tillman:block/brown",
+    "missing": "testmod_von_tillman:block/red"
+  }
+}

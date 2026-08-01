@@ -1,0 +1,55 @@
+{
+  "stats": {
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 16074,
+      "minecraft:walk_one_cm": 77355,
+      "minecraft:mob_kills": 38,
+      "minecraft:damage_dealt": 3230,
+      "minecraft:play_time": 19028,
+      "minecraft:jump": 110,
+      "minecraft:time_since_death": 8003,
+      "minecraft:drop": 1,
+      "minecraft:sprint_one_cm": 31031,
+      "minecraft:inspect_dispenser": 1,
+      "minecraft:total_world_time": 23019,
+      "minecraft:fly_one_cm": 775658,
+      "minecraft:walk_on_water_one_cm": 643,
+      "minecraft:crouch_one_cm": 1263,
+      "minecraft:sneak_time": 533,
+      "minecraft:deaths": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:wind_charge": 64,
+      "minecraft:netherite_spear": 1,
+      "minecraft:brown_wool": 1,
+      "minecraft:repeating_command_block": 1,
+      "minecraft:mace": 1,
+      "minecraft:white_wool": 1,
+      "minecraft:slime_ball": 2,
+      "minecraft:mutton": 2,
+      "minecraft:tnt": 1152,
+      "minecraft:snowball": 16
+    },
+    "minecraft:dropped": {
+      "minecraft:dispenser": 1
+    },
+    "minecraft:used": {
+      "minecraft:comparator": 1,
+      "minecraft:water_bucket": 5,
+      "minecraft:repeating_command_block": 2,
+      "minecraft:lever": 1,
+      "minecraft:wind_charge": 78,
+      "minecraft:snowball": 175,
+      "minecraft:redstone": 8,
+      "minecraft:dispenser": 9,
+      "minecraft:netherite_spear": 46,
+      "minecraft:mace": 10,
+      "minecraft:bedrock": 11
+    },
+    "minecraft:killed": {
+      "minecraft:slime": 33,
+      "minecraft:sheep": 3
+    }
+  },
+  "DataVersion": 4790
+}

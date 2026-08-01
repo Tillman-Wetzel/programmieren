@@ -1,0 +1,12 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 14
+  },
+  "gives": {
+    "id": "testmod_von_tillman:teapot"
+  },
+  "max_uses": 10,
+  "xp": 15,
+  "reputation_discount": 0.05
+}

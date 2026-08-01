@@ -1,0 +1,50 @@
+/data get block -7 57 23
+/fill ~-10 ~-8 ~-10 ~10 ~5 ~10 minecraft:lever replace air
+/gamerule testmod_von_tillman:let_everyone_fly
+/tick rate 2
+/tick rate 20
+/setblock 43 59 25 air
+/stopsound @a *
+/stopsound @a block minecraft:block.piston.extend
+/summon tnt ~ ~ ~ {fuse:1000000000}
+/summon tnt ~ ~ ~ {fuse:100000000}
+/summon tnt ~ ~ ~ {fuse:10000}
+/summon tnt ~ ~ ~ {fuse:100000}
+/summon tnt ~ ~ ~ {fuse:10000}
+/tick rate 2
+/effect give @a minecraft:night_vision infinite 0 true
+/tick rate 20
+/summon tnts
+/summon tnt
+/gamerule testmod_von_tillman:let_everyone_fly true
+/attribute @s minecraft:gravity base get
+/attribute @s minecraft:gravity base set 0.1
+/attribute @s minecraft:gravity base set 0.3
+/attribute @s minecraft:gravity base set 0.01
+/attribute @s minecraft:gravity base set 0.08
+/fill -176 190 785
+/fill -176 190 785 -186 192 783 air
+/fill -176 193 783
+/fill -176 193 783 -187 197 783 air
+/fill -176 190 785 -186 192 783 air
+/fill -176 190 785 -186 191 783 air
+/tick rate 2
+/tick rate 20
+/tick rate 10
+/tick rate 20
+/clone -172 192 783
+/clone -172 192 783 -176 196 785
+/clone -172 192 783 -176 196 785 -175 192 783
+/clone -172 192 783 -176 196 785 -175 192 783 replace
+/clone -172 192 783 -176 196 785 -175 192 783 strict
+/clone -172 192 783 -176 196 785 -178 192 783
+/clone -172 192 783
+/clone -172 192 783 -176 196 785
+/clone -172 192 783 -176 196 785 -178 192 783
+/clone -172 192 783 -176 196 785 -182 196 785
+/clone -172 192 783 -176 196 785 -182 192 783
+/tick rate 2
+/tick rate 20
+/give @a minecraft:lava_bucket 10
+/setblock -209 174 771 lava
+/setblock -209 174 771 minecraft:lava_cauldron

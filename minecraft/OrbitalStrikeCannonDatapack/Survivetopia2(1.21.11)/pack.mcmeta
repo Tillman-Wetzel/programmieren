@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "1.21.11 Datapack",
+    "pack_format": 94.1,
+    "supported_formats": {
+      "min_inclusive": 48,
+      "max_inclusive": 101
+    }
+  }
+}

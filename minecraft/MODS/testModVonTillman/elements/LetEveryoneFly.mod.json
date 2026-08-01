@@ -1,0 +1,12 @@
+{
+  "_fv": 89,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Everybody can Fly",
+    "description": "Everyone has the ability to fly",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}

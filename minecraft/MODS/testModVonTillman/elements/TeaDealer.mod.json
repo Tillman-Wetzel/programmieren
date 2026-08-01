@@ -1,0 +1,12 @@
+{
+  "_fv": 89,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Tea Dealer",
+    "pointOfInterest": "CUSTOM:Teapot",
+    "actionSound": "entity.villager.work_cleric",
+    "hat": "None",
+    "professionTextureFile": "tea_dealer2.png",
+    "zombifiedProfessionTextureFile": "villager_v2.png"
+  }
+}

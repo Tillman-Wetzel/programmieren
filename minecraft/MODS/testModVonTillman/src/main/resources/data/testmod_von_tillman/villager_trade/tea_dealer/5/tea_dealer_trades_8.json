@@ -1,0 +1,12 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 6
+  },
+  "gives": {
+    "id": "testmod_von_tillman:glow_berry_tea_bag_item"
+  },
+  "max_uses": 12,
+  "xp": 15,
+  "reputation_discount": 0.05
+}

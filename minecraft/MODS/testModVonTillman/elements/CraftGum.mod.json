@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 6,
+    "group": "",
+    "unlockingItems": [
+      "Items.HONEYCOMB",
+      "Blocks.RED_FLOWER#1"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      "",
+      "Items.HONEY_BOTTLE",
+      "",
+      "",
+      "Items.HONEYCOMB",
+      "",
+      "",
+      "Blocks.RED_FLOWER#1",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:Kaugummi",
+    "name": "craft_gum",
+    "namespace": "mod"
+  }
+}

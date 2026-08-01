@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "testmod_von_tillman:kaugummi"
+    },
+    "title": {
+      "translate": "advancements.eatgum.title"
+    },
+    "description": {
+      "translate": "advancements.eatgum.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "eatgum_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "testmod_von_tillman:kaugummi"
+        }
+      }
+    }
+  },
+  "parent": "minecraft:husbandry/balanced_diet"
+}

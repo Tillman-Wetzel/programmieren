@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "testmod_von_tillman:item/kaugummi1"
+  }
+}

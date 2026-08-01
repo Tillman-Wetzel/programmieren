@@ -1,0 +1,1 @@
+give @s fishing_rod[custom_data={stabshot:1b},custom_name={"italic":true,"text":"stabshot"},rarity="rare",damage=63] 1
