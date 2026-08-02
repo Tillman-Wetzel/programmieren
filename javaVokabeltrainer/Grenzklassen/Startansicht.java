@@ -69,8 +69,7 @@ public class Startansicht implements ActionListener{
     if (e.getSource() == startknopf) {
         String ausgangssprache = ausgangsspracheChoice.getSelectedItem();
         String zielsprache = zielspracheChoice.getSelectedItem();
-        Steuerungsklassenfactory.erstelleGetWortSteuerung(ausgangssprache, zielsprache);
-        Grenzklassenfactory.erstelleAbfrage(zielsprache);
+        Grenzklassenfactory.erstelleAbfrage(ausgangssprache, zielsprache);
         vokabeltrainerStartansicht.setVisible(false);
     }
 }

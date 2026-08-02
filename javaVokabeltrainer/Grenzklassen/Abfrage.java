@@ -15,22 +15,21 @@ public class Abfrage implements ActionListener{
 
     Button abgebenButton;
 
-    Abfrage(String zielsprache) {
-        this.erstelleAbfrage(zielsprache);
-        
+    Abfrage(String ausgangssprache, String zielsprache) {
+        this.erstelleAbfrage(ausgangssprache, zielsprache);
     }
 
     public void dreuckeNochEinWort() {
         //getWort();
     }
 
-    void erstelleAbfrage(String zielsprache) {
+    void erstelleAbfrage(String ausgangssprache, String zielsprache) {
         vokabeltrainerAnsicht = new Frame("Tillman's AWT Super Vokabeltrainer");
 
         vokabeltrainerAnsicht.setSize(800, 600);
         vokabeltrainerAnsicht.setLayout(new GridLayout(6, 1, 10, 10));
 
-        erstelleInhalt(zielsprache);
+        erstelleInhalt(ausgangssprache, zielsprache);
 
         vokabeltrainerAnsicht.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent we) {
@@ -45,7 +44,7 @@ public class Abfrage implements ActionListener{
         vokabeltrainerAnsicht.setVisible(true);
     }
 
-    void erstelleInhalt(String zielsprache) {
+    void erstelleInhalt(String ausgangssprache, String zielsprache) {
 
         titelLabel = new Label("Tillman's Vokabeltrainer", Label.CENTER);
         titelLabel.setFont(new Font("Arial", Font.BOLD, 28));

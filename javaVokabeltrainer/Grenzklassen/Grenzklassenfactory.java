@@ -5,7 +5,7 @@ public class Grenzklassenfactory {
         return new Startansicht();
     }
 
-    public static Abfrage erstelleAbfrage(String zielsprache) {
-        return new Abfrage(zielsprache); 
+    public static Abfrage erstelleAbfrage(String ausgangssprache, String zielsprache) {
+        return new Abfrage(ausgangssprache, zielsprache);
     }
 }
