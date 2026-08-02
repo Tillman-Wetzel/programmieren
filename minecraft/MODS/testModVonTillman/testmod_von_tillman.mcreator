@@ -8,9 +8,9 @@
       "registry_name": "kaugummi",
       "metadata": {
         "files": [
-          "src/main/resources/assets/testmod_von_tillman/items/kaugummi.json",
           "src/main/java/net/mcreator/testmodvontillman/item/KaugummiItem.java",
-          "src/main/resources/assets/testmod_von_tillman/models/item/kaugummi.json"
+          "src/main/resources/assets/testmod_von_tillman/models/item/kaugummi.json",
+          "src/main/resources/assets/testmod_von_tillman/items/kaugummi.json"
         ]
       },
       "path": "~/Kaugummi"
@@ -23,9 +23,9 @@
       "registry_name": "benutztes_kaugummi",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/testmodvontillman/item/BenutztesKaugummiItem.java",
           "src/main/resources/assets/testmod_von_tillman/items/benutztes_kaugummi.json",
-          "src/main/resources/assets/testmod_von_tillman/models/item/benutztes_kaugummi.json"
+          "src/main/resources/assets/testmod_von_tillman/models/item/benutztes_kaugummi.json",
+          "src/main/java/net/mcreator/testmodvontillman/item/BenutztesKaugummiItem.java"
         ]
       },
       "path": "~/Kaugummi"
@@ -229,8 +229,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/testmod_von_tillman/items/sweet_berry_tea_bag_item.json",
-          "src/main/java/net/mcreator/testmodvontillman/item/SweetBerryTeaBagItemItem.java",
-          "src/main/resources/assets/testmod_von_tillman/models/item/sweet_berry_tea_bag_item.json"
+          "src/main/resources/assets/testmod_von_tillman/models/item/sweet_berry_tea_bag_item.json",
+          "src/main/java/net/mcreator/testmodvontillman/item/SweetBerryTeaBagItemItem.java"
         ]
       },
       "path": "~/Tee"
@@ -243,8 +243,8 @@
       "registry_name": "glow_berry_tea_bag_item",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/testmodvontillman/item/GlowBerryTeaBagItemItem.java",
           "src/main/resources/assets/testmod_von_tillman/models/item/glow_berry_tea_bag_item.json",
+          "src/main/java/net/mcreator/testmodvontillman/item/GlowBerryTeaBagItemItem.java",
           "src/main/resources/assets/testmod_von_tillman/items/glow_berry_tea_bag_item.json"
         ]
       },
@@ -258,15 +258,15 @@
       "registry_name": "hot_water",
       "metadata": {
         "files": [
+          "src/main/resources/assets/testmod_von_tillman/models/item/hot_water_bucket.json",
+          "src/main/java/net/mcreator/testmodvontillman/fluid/HotWaterFluid.java",
           "src/main/java/net/mcreator/testmodvontillman/item/HotWaterItem.java",
           "src/main/resources/assets/testmod_von_tillman/items/hot_water_bucket.json",
+          "src/main/resources/assets/testmod_von_tillman/blockstates/hot_water.json",
+          "src/main/resources/assets/testmod_von_tillman/models/block/hot_water.json",
           "src/main/java/net/mcreator/testmodvontillman/client/fluid/HotWaterFluidExtension.java",
           "src/main/java/net/mcreator/testmodvontillman/block/HotWaterBlock.java",
-          "src/main/resources/assets/testmod_von_tillman/models/item/hot_water_bucket.json",
-          "src/main/resources/assets/testmod_von_tillman/models/block/hot_water.json",
-          "src/main/java/net/mcreator/testmodvontillman/fluid/HotWaterFluid.java",
-          "src/main/java/net/mcreator/testmodvontillman/fluid/types/HotWaterFluidType.java",
-          "src/main/resources/assets/testmod_von_tillman/blockstates/hot_water.json"
+          "src/main/java/net/mcreator/testmodvontillman/fluid/types/HotWaterFluidType.java"
         ]
       },
       "path": "~/Tee/hot_water"
@@ -333,13 +333,16 @@
       "registry_name": "teapot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/testmod_von_tillman/items/teapot.json",
+          "src/main/java/net/mcreator/testmodvontillman/block/TeapotBlock.java",
+          "src/main/resources/assets/testmod_von_tillman/models/item/teapot.json",
+          "src/main/resources/data/testmod_von_tillman/worldgen/configured_feature/teapot.json",
+          "src/main/resources/data/testmod_von_tillman/worldgen/placed_feature/teapot.json",
           "src/main/resources/assets/testmod_von_tillman/models/block/teapot.json",
+          "src/main/resources/data/testmod_von_tillman/neoforge/biome_modifier/teapot_biome_modifier.json",
           "src/main/resources/data/testmod_von_tillman/loot_table/blocks/teapot.json",
           "src/main/resources/assets/testmod_von_tillman/blockstates/teapot.json",
-          "src/main/resources/assets/testmod_von_tillman/models/item/teapot.json",
           "src/main/java/net/mcreator/testmodvontillman/block/entity/TeapotBlockEntity.java",
-          "src/main/java/net/mcreator/testmodvontillman/block/TeapotBlock.java"
+          "src/main/resources/assets/testmod_von_tillman/items/teapot.json"
         ]
       },
       "path": "~/Tee"
@@ -352,10 +355,10 @@
       "registry_name": "tea_dealer",
       "metadata": {
         "files": [
-          "src/main/resources/data/testmod_von_tillman/trade_set/tea_dealer/level_2.json",
-          "src/main/resources/data/testmod_von_tillman/trade_set/tea_dealer/level_3.json",
           "src/main/resources/data/testmod_von_tillman/trade_set/tea_dealer/level_4.json",
+          "src/main/resources/data/testmod_von_tillman/trade_set/tea_dealer/level_3.json",
           "src/main/resources/data/testmod_von_tillman/trade_set/tea_dealer/level_1.json",
+          "src/main/resources/data/testmod_von_tillman/trade_set/tea_dealer/level_2.json",
           "src/main/resources/data/testmod_von_tillman/trade_set/tea_dealer/level_5.json"
         ]
       },
@@ -369,16 +372,16 @@
       "registry_name": "tea_dealer_trades",
       "metadata": {
         "files": [
-          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/2/tea_dealer_trades_3.json",
-          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/3/tea_dealer_trades_4.json",
-          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/1/tea_dealer_trades_1.json",
-          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/3/tea_dealer_trades_5.json",
-          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/5/tea_dealer_trades_9.json",
           "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/1/tea_dealer_trades_0.json",
-          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/4/tea_dealer_trades_7.json",
+          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/3/tea_dealer_trades_5.json",
+          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/4/tea_dealer_trades_6.json",
+          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/3/tea_dealer_trades_4.json",
           "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/5/tea_dealer_trades_8.json",
+          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/1/tea_dealer_trades_1.json",
+          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/2/tea_dealer_trades_3.json",
+          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/4/tea_dealer_trades_7.json",
           "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/2/tea_dealer_trades_2.json",
-          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/4/tea_dealer_trades_6.json"
+          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/5/tea_dealer_trades_9.json"
         ]
       },
       "path": "~/Tee"
@@ -405,8 +408,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/testmod_von_tillman/worldgen/template_pool/tea_hut.json",
-          "src/main/resources/data/testmod_von_tillman/worldgen/structure_set/tea_hut.json",
-          "src/main/resources/data/testmod_von_tillman/worldgen/structure/tea_hut.json"
+          "src/main/resources/data/testmod_von_tillman/worldgen/structure/tea_hut.json",
+          "src/main/resources/data/testmod_von_tillman/worldgen/structure_set/tea_hut.json"
         ]
       },
       "path": "~/Tee"
@@ -468,6 +471,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -479,18 +486,15 @@
       "path": "~/TillmansCarpet"
     },
     {
-      "name": "MakeHotWaterInTeapot",
-      "type": "procedure",
+      "name": "CanFly",
+      "type": "attribute",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "make_hot_water_in_teapot",
+      "registry_name": "can_fly",
       "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/net/mcreator/testmodvontillman/procedures/MakeHotWaterInTeapotProcedure.java"
-        ]
+        "files": []
       },
-      "path": "~/Tee/hot_water"
+      "path": "~/TillmansCarpet"
     }
   ],
   "variable_elements": [],
@@ -522,18 +526,18 @@
     "BLOCKS:minecraft:replaceable": [
       "~HotWater@CUSTOM:HotWater"
     ],
-    "BLOCKS:minecraft:mineable/pickaxe": [
-      "~Teapot@CUSTOM:Teapot"
-    ],
     "POINTS_OF_INTEREST:minecraft:acquirable_job_site": [
       "~TeaDealer@CUSTOM:TeaDealer"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~Teapot@CUSTOM:Teapot"
     ]
   },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.testmod_von_tillman.kaugummi": "Kaugummi",
-      "item.testmod_von_tillman.benutztes_kaugummi": "Benutztes Kaugummi",
+      "item.testmod_von_tillman.kaugummi": "Gum",
+      "item.testmod_von_tillman.benutztes_kaugummi": "Eaten Gum",
       "advancements.eatgum.descr": "Eat some Gum",
       "advancements.eatgum.title": "Mmmhhf mmhf nam nam",
       "item_group.testmod_von_tillman.tillmans_creative_tab": "Tillmans Coolste Mod",
@@ -546,7 +550,10 @@
       "item.testmod_von_tillman.teapot": "Teapot",
       "entity.villager.testmod_von_tillman.tea_dealer": "Tea Dealer",
       "gamerule.testmod_von_tillman.letEveryoneFly": "Everybody can Fly",
-      "gamerule.testmod_von_tillman.letEveryoneFly.description": "Everyone has the ability to fly"
+      "gamerule.testmod_von_tillman.letEveryoneFly.description": "Everyone has the ability to fly",
+      "gamerule.testmod_von_tillman.let_everyone_fly": "Everybody can Fly",
+      "gamerule.testmod_von_tillman.let_everyone_fly.description": "Everyone has the ability to fly",
+      "attribute.testmod_von_tillman.can_fly": "Can Fly"
     },
     "de_de": {
       "item.testmod_von_tillman.kaugummi": "Kaugummi",
@@ -563,11 +570,15 @@
       "item.testmod_von_tillman.teapot": "Teapot",
       "entity.villager.testmod_von_tillman.tea_dealer": "Tea Dealer",
       "gamerule.testmod_von_tillman.letEveryoneFly": "Everybody can Fly",
-      "gamerule.testmod_von_tillman.letEveryoneFly.description": "Everyone has the ability to fly"
+      "gamerule.testmod_von_tillman.letEveryoneFly.description": "Everyone has the ability to fly",
+      "gamerule.testmod_von_tillman.let_everyone_fly": "Everybody can Fly",
+      "gamerule.testmod_von_tillman.let_everyone_fly.description": "Everyone has the ability to fly",
+      "attribute.testmod_von_tillman.can_fly": "Can Fly"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/testmodvontillman/init/TestmodVonTillmanModAttributes.java",
       "src/main/java/net/mcreator/testmodvontillman/init/TestmodVonTillmanModFluidTypes.java",
       "src/main/java/net/mcreator/testmodvontillman/init/TestmodVonTillmanModFluids.java",
       "src/main/java/net/mcreator/testmodvontillman/init/TestmodVonTillmanModGameRules.java",
@@ -575,9 +586,9 @@
       "src/main/java/net/mcreator/testmodvontillman/init/TestmodVonTillmanModBlocks.java",
       "src/main/java/net/mcreator/testmodvontillman/init/TestmodVonTillmanModBlockEntities.java",
       "src/main/java/net/mcreator/testmodvontillman/init/TestmodVonTillmanModItems.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/testmodvontillman/TestmodVonTillmanMod.java",
       "src/main/java/net/mcreator/testmodvontillman/init/TestmodVonTillmanModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta"
     ]
   },
@@ -622,5 +633,5 @@
     "currentGenerator": "neoforge-26.1.2",
     "modElementsPackage": "net.mcreator.testmodvontillman"
   },
-  "mcreatorVersion": 202600229418
+  "mcreatorVersion": 202600230420
 }

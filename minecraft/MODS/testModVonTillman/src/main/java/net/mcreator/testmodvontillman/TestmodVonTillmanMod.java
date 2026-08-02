@@ -56,6 +56,7 @@ public class TestmodVonTillmanMod {
 		TestmodVonTillmanModGameRules.REGISTRY.register(modEventBus);
 		TestmodVonTillmanModFluids.REGISTRY.register(modEventBus);
 		TestmodVonTillmanModFluidTypes.REGISTRY.register(modEventBus);
+		TestmodVonTillmanModAttributes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

@@ -4,6 +4,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
@@ -29,11 +30,12 @@ import java.util.function.Function;
 
 public class TeapotBlock extends Block implements EntityBlock {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
+	public static final IntegerProperty HEAT = IntegerProperty.create("heat", 300, 375);
 	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public TeapotBlock(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.COPPER).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(HEAT, 300));
 	}
 
 	private Function<BlockState, VoxelShape> makeShapes() {
@@ -48,7 +50,7 @@ public class TeapotBlock extends Block implements EntityBlock {
 				default -> Shapes.or(box(6, 4, 5, 12, 6, 13), box(5, 0, 3, 11, 4, 13), box(3, 0, 5, 13, 4, 11), box(4, 0, 4, 12, 4, 12), box(6, 7, 6, 10, 8, 10), box(5, 6, 5, 11, 7, 11), box(5, 4, 4, 11, 6, 12), box(7, 7, 10, 9, 10, 11),
 						box(7, 6, 4, 9, 10, 5), box(7, 10, 5, 9, 11, 10));
 			};
-		});
+		}, HEAT);
 	}
 
 	@Override
@@ -74,7 +76,7 @@ public class TeapotBlock extends Block implements EntityBlock {
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(FACING);
+		builder.add(FACING, HEAT);
 	}
 
 	@Override
@@ -82,7 +84,7 @@ public class TeapotBlock extends Block implements EntityBlock {
 		BlockState state = super.getStateForPlacement(context);
 		if (state == null)
 			return null;
-		return state.setValue(FACING, context.getHorizontalDirection().getOpposite());
+		return state.setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(HEAT, 300);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {

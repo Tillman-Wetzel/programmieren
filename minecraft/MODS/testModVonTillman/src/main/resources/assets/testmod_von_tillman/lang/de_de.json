@@ -13,5 +13,8 @@
   "item.testmod_von_tillman.teapot": "Teapot",
   "entity.villager.testmod_von_tillman.tea_dealer": "Tea Dealer",
   "gamerule.testmod_von_tillman.letEveryoneFly": "Everybody can Fly",
-  "gamerule.testmod_von_tillman.letEveryoneFly.description": "Everyone has the ability to fly"
+  "gamerule.testmod_von_tillman.letEveryoneFly.description": "Everyone has the ability to fly",
+  "gamerule.testmod_von_tillman.let_everyone_fly": "Everybody can Fly",
+  "gamerule.testmod_von_tillman.let_everyone_fly.description": "Everyone has the ability to fly",
+  "attribute.testmod_von_tillman.can_fly": "Can Fly"
 }

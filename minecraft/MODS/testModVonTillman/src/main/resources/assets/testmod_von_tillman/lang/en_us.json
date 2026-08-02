@@ -1,6 +1,6 @@
 {
-  "item.testmod_von_tillman.kaugummi": "Kaugummi",
-  "item.testmod_von_tillman.benutztes_kaugummi": "Benutztes Kaugummi",
+  "item.testmod_von_tillman.kaugummi": "Gum",
+  "item.testmod_von_tillman.benutztes_kaugummi": "Eaten Gum",
   "advancements.eatgum.descr": "Eat some Gum",
   "advancements.eatgum.title": "Mmmhhf mmhf nam nam",
   "item_group.testmod_von_tillman.tillmans_creative_tab": "Tillmans Coolste Mod",
@@ -13,5 +13,8 @@
   "item.testmod_von_tillman.teapot": "Teapot",
   "entity.villager.testmod_von_tillman.tea_dealer": "Tea Dealer",
   "gamerule.testmod_von_tillman.letEveryoneFly": "Everybody can Fly",
-  "gamerule.testmod_von_tillman.letEveryoneFly.description": "Everyone has the ability to fly"
+  "gamerule.testmod_von_tillman.letEveryoneFly.description": "Everyone has the ability to fly",
+  "gamerule.testmod_von_tillman.let_everyone_fly": "Everybody can Fly",
+  "gamerule.testmod_von_tillman.let_everyone_fly.description": "Everyone has the ability to fly",
+  "attribute.testmod_von_tillman.can_fly": "Can Fly"
 }

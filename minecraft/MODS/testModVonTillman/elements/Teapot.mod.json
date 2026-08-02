@@ -118,7 +118,15 @@
         "subtract": false
       }
     ],
-    "customProperties": [],
+    "customProperties": [
+      {
+        "min": 300,
+        "max": 375,
+        "name": "CUSTOM:heat",
+        "type": "integer",
+        "value": 300
+      }
+    ],
     "name": "Teapot",
     "specialInformation": {
       "fixedValue": []
@@ -206,10 +214,10 @@
       "WATER"
     ],
     "onRightClicked": "TeapotOnBlockRightclicked",
-    "generateFeature": false,
+    "generateFeature": true,
     "restrictionBiomes": [],
     "blocksToReplace": [
-      "TAG:stone_ore_replaceables"
+      "Blocks.CAULDRON"
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
