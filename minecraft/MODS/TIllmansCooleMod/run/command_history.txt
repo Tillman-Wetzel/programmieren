@@ -1,0 +1,22 @@
+/gamerule tillmanstollemod:let_everyone_fly true
+/gamerule tillmanstollemod:let_everyone_fly false
+/attribute @s tillmanstollemod:can_fly base get
+/attribute @s tillmanstollemod:can_fly base set 1
+/attribute @s tillmanstollemod:can_fly base reset
+/gamerule tillmanstollemod:let_everyone_fly true
+/gamerule tillmanstollemod:let_everyone_fly false
+/attribute @s tillmanstollemod:can_fly base set 1
+/attribute @s tillmanstollemod:can_fly base set 0
+/give @a tillmanstollemod:lightning_sword
+/gamerule tillmanstollemod:let_everyone_fly
+/attribute @s tillmanstollemod:can_fly
+/attribute @s tillmanstollemod:can_fly get
+/attribute @s tillmanstollemod:can_fly base set 0.1
+/attribute @s tillmanstollemod:can_fly base set 0
+/attribute @s tillmanstollemod:can_fly base set 1
+/attribute @s tillmanstollemod:can_fly get
+/attribute @s tillmanstollemod:can_fly modifier value
+/attribute @s tillmanstollemod:can_fly modifier value get tillmanstollemod:tillmans_armor_0.boots
+/attribute @s tillmanstollemod:can_fly modifier value get
+/attribute @s tillmanstollemod:can_fly modifier value
+/attribute @s tillmanstollemod:can_fly get

@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "tillmanstollemod:tillmans_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "tillmanstollemod:tillmans_armor"
+      }
+    ]
+  }
+}

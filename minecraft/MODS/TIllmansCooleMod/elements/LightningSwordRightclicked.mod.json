@@ -1,0 +1,8 @@
+{
+  "_fv": 89,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"-111\" y=\"46\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"execute_command\"><value name=\"command\"><block type=\"text\"><field name=\"TEXT\">summon minecraft:lightning_bolt ~ ~ ~</field></block></value><value name=\"x\"><block type=\"entity_lookpos_x\"><field name=\"fluid_mode\">NONE</field><field name=\"block_mode\">OUTLINE</field><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><value name=\"maxdistance\"><block type=\"math_number\"><field name=\"NUM\">100</field></block></value></block></value><value name=\"y\"><block type=\"entity_lookpos_y\"><field name=\"fluid_mode\">NONE</field><field name=\"block_mode\">OUTLINE</field><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><value name=\"maxdistance\"><block type=\"math_number\"><field name=\"NUM\">100</field></block></value></block></value><value name=\"z\"><block type=\"entity_lookpos_z\"><field name=\"fluid_mode\">NONE</field><field name=\"block_mode\">OUTLINE</field><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><value name=\"maxdistance\"><block type=\"math_number\"><field name=\"NUM\">100</field></block></value></block></value></block></next></block><block type=\"coord_y\" x=\"1069\" y=\"144\"></block><block type=\"coord_z\" x=\"1925\" y=\"143\"></block></xml>",
+    "skipDependencyNullCheck": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "block.playertracker.player_tracker_block": "Player Tracker Block",
+  "gui.playertracker.player_tracker_gui.label_player_to_track": "Player To Track:",
+  "gui.playertracker.player_tracker_gui.button_add_yourself": "Add Yourself",
+  "gui.playertracker.player_tracker_gui.label_playername": "Playername",
+  "gui.playertracker.player_tracker_gui.button_x": "X",
+  "gui.playertracker.player_tracker_gui.button_toggle_mode": "Toggle mode",
+  "gui.playertracker.player_tracker_gui.UseYCheckbox": "Use Y"
+}

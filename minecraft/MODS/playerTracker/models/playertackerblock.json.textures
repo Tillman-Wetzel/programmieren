@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "1": "playertrackerblockmain",
+        "2": "player_tracker_block_arrow",
+        "3": "alex_skin"
+      }
+    }
+  }
+}

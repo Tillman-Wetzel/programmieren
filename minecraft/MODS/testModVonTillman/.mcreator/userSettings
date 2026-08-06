@@ -6,12 +6,13 @@
     "expandedPaths": [
       "[, Testmod Von Tillman]",
       "[, Testmod Von Tillman, Source (Gradle)]",
-      "[, Testmod Von Tillman, Source (Gradle), C:\\Users\\Tillman\\curseforge\\Desktop\\programmieren\\minecraft\\MODS\\testModVonTillman\\src\\main\\java\\net]",
-      "[, Testmod Von Tillman, Source (Gradle), C:\\Users\\Tillman\\curseforge\\Desktop\\programmieren\\minecraft\\MODS\\testModVonTillman\\src\\main\\java\\net, C:\\Users\\Tillman\\curseforge\\Desktop\\programmieren\\minecraft\\MODS\\testModVonTillman\\src\\main\\java\\net\\mcreator]",
-      "[, Testmod Von Tillman, Source (Gradle), C:\\Users\\Tillman\\curseforge\\Desktop\\programmieren\\minecraft\\MODS\\testModVonTillman\\src\\main\\java\\net, C:\\Users\\Tillman\\curseforge\\Desktop\\programmieren\\minecraft\\MODS\\testModVonTillman\\src\\main\\java\\net\\mcreator, C:\\Users\\Tillman\\curseforge\\Desktop\\programmieren\\minecraft\\MODS\\testModVonTillman\\src\\main\\java\\net\\mcreator\\testmodvontillman]"
+      "[, Testmod Von Tillman, Source (Gradle), /home/tillman/Desktop/programmieren/minecraft/MODS/testModVonTillman/src/main/java/net]",
+      "[, Testmod Von Tillman, Source (Gradle), /home/tillman/Desktop/programmieren/minecraft/MODS/testModVonTillman/src/main/java/net, /home/tillman/Desktop/programmieren/minecraft/MODS/testModVonTillman/src/main/java/net/mcreator]",
+      "[, Testmod Von Tillman, Source (Gradle), /home/tillman/Desktop/programmieren/minecraft/MODS/testModVonTillman/src/main/java/net, /home/tillman/Desktop/programmieren/minecraft/MODS/testModVonTillman/src/main/java/net/mcreator, /home/tillman/Desktop/programmieren/minecraft/MODS/testModVonTillman/src/main/java/net/mcreator/testmodvontillman]"
     ]
   },
   "leftDockState": {
+    "expandedDock": "project_browser",
     "dockSizes": {
       "project_browser": 280,
       "local_history": 280
@@ -21,8 +22,9 @@
     "dockSizes": {}
   },
   "bottomDockState": {
+    "expandedDock": "console",
     "dockSizes": {
-      "console": 300,
+      "console": 345,
       "code_viewer": 300,
       "debugger": 300
     }

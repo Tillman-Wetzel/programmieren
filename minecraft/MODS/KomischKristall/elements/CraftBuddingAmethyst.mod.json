@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:KristallSplitter"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:KristallSplitter",
+      "CUSTOM:KristallSplitter",
+      "CUSTOM:KristallSplitter",
+      "CUSTOM:KristallSplitter",
+      "Blocks.AMETHYST_BLOCK",
+      "CUSTOM:KristallSplitter",
+      "CUSTOM:KristallSplitter",
+      "CUSTOM:KristallSplitter",
+      "CUSTOM:KristallSplitter"
+    ],
+    "recipeReturnStack": "Blocks.BUDDING_AMETHYST",
+    "name": "craft_budding_amethyst",
+    "namespace": "mod"
+  }
+}

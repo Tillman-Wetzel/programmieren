@@ -1,0 +1,11 @@
+{
+  "parent": "playertracker:custom/playertackerblock",
+  "textures": {
+    "all": "playertracker:block/playertrackerblockmain",
+    "particle": "playertracker:block/playertrackerblockmain",
+    "1": "playertracker:block/playertrackerblockmain",
+    "2": "playertracker:block/player_tracker_block_arrow",
+    "3": "playertracker:block/alex_skin"
+  },
+  "render_type": "solid"
+}

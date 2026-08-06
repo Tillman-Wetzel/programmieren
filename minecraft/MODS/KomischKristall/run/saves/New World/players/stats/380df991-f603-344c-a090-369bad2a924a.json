@@ -1,0 +1,30 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:reinforced_deepslate": 12,
+      "kristallmodwoichkeinbockdraufhab:kristal_dimension": 12,
+      "minecraft:sandstone": 3
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 3560,
+      "minecraft:time_since_rest": 3966,
+      "minecraft:walk_one_cm": 6209,
+      "minecraft:total_world_time": 4199,
+      "minecraft:leave_game": 2,
+      "minecraft:fly_one_cm": 6332,
+      "minecraft:crouch_one_cm": 77,
+      "minecraft:sneak_time": 64,
+      "minecraft:play_time": 3966,
+      "minecraft:jump": 26,
+      "minecraft:time_since_death": 3966,
+      "minecraft:drop": 4
+    },
+    "minecraft:dropped": {
+      "kristallmodwoichkeinbockdraufhab:kristall_splitter": 5
+    },
+    "minecraft:picked_up": {
+      "kristallmodwoichkeinbockdraufhab:kristall_splitter": 4
+    }
+  },
+  "DataVersion": 4790
+}

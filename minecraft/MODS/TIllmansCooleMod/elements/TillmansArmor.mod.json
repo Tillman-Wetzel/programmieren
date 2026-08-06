@@ -1,0 +1,116 @@
+{
+  "_fv": 89,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": false,
+    "textureHelmet": "tillmansarmor_head",
+    "enableBody": false,
+    "textureBody": "tillmansarmor_body",
+    "enableLeggings": false,
+    "textureLeggings": "tillmansarmor_leggings",
+    "enableBoots": true,
+    "textureBoots": "tillmansarmor_boots",
+    "creativeTabs": [
+      "COMBAT",
+      "CUSTOM:TillmansCooleItems"
+    ],
+    "armorTextureFile": "tillmansarmor",
+    "helmetName": "Tillmans Armor Helmet",
+    "bodyName": "Tillmans Armor Chestplate",
+    "leggingsName": "Tillmans Armor Leggings",
+    "bootsName": "Boots of flight",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetTranslucency": false,
+    "bodyTranslucency": false,
+    "leggingsTranslucency": false,
+    "bootsTranslucency": false,
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 15,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 128,
+    "toughness": 1.5,
+    "knockbackResistance": 0.0,
+    "equipSound": "item.armor.equip_diamond",
+    "repairItems": [],
+    "rarity": "COMMON",
+    "attributeModifiers": [
+      {
+        "equipmentSlot": "feet",
+        "attribute": "CUSTOM:CanFly",
+        "amount": 1.0,
+        "operation": "ADD_VALUE",
+        "armorPieces": [
+          false,
+          false,
+          false,
+          true
+        ]
+      }
+    ]
+  }
+}

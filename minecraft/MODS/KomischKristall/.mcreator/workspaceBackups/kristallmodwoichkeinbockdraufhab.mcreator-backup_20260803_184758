@@ -1,0 +1,98 @@
+{
+  "mod_elements": [
+    {
+      "name": "KristallSplitter",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kristall_splitter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/models/item/kristall_splitter.json",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/items/kristall_splitter.json",
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/item/KristallSplitterItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Kristalle",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kristalle",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "KristalDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kristal_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/world/teleporter/KristalDimensionTeleporter.java",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/items/kristal_dimension.json",
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/world/teleporter/KristalDimensionPortalShape.java",
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/item/KristalDimensionItem.java",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/models/item/kristal_dimension.json",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/models/block/kristal_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/block/KristalDimensionPortalBlock.java",
+          "src/main/resources/data/kristallmodwoichkeinbockdraufhab/dimension/kristal_dimension.json",
+          "src/main/resources/data/kristallmodwoichkeinbockdraufhab/dimension_type/kristal_dimension.json",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/blockstates/kristal_dimension_portal.json",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/models/block/kristal_dimension_portal_ns.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~KristalDimension@Blocks.AMETHYST_BLOCK"
+    ],
+    "ITEMS:minecraft:piglin_loved": [
+      "~KristallSplitter@CUSTOM:KristallSplitter"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.kristallmodwoichkeinbockdraufhab.kristall_splitter": "Kristall Splitter",
+      "item_group.kristallmodwoichkeinbockdraufhab.kristalle": "LustigeKristalle",
+      "item.kristallmodwoichkeinbockdraufhab.kristal_dimension": "Kristal Dimension Portal Igniter"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/init/KristallmodwoichkeinbockdraufhabModBlocks.java",
+      "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/init/KristallmodwoichkeinbockdraufhabModItems.java",
+      "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/KristallmodwoichkeinbockdraufhabMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/init/KristallmodwoichkeinbockdraufhabModTabs.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "kristallmodwoichkeinbockdraufhab",
+    "modName": "KristallModWoIchKeinBockDraufHabe",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-26.1.2",
+    "modElementsPackage": "net.mcreator.kristallmodwoichkeinbockdraufhab"
+  },
+  "mcreatorVersion": 202600230420
+}

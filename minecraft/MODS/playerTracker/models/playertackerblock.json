@@ -1,0 +1,61 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "PlayerTrackerBlockMain",
+		"2": "player_tracker_block_arrow",
+		"3": "alex_skin",
+		"particle": "PlayerTrackerBlockMain"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 1],
+			"to": [15, 14, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, -1, 8]},
+			"faces": {
+				"north": {"uv": [3.5, 3.5, 7, 7], "texture": "#1"},
+				"east": {"uv": [3.5, 0, 7, 3.5], "texture": "#1"},
+				"south": {"uv": [0, 0, 3.5, 3.5], "texture": "#1"},
+				"west": {"uv": [0, 3.5, 3.5, 7], "texture": "#1"},
+				"up": {"uv": [3.5, 10.5, 0, 7], "texture": "#1"},
+				"down": {"uv": [10.5, 0, 7, 3.5], "texture": "#1"}
+			}
+		},
+		{
+			"from": [5, 14, 5],
+			"to": [11, 15, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 13, 7]},
+			"faces": {
+				"north": {"uv": [10, 9, 16, 10], "texture": "#2"},
+				"east": {"uv": [10, 9, 16, 10], "texture": "#2"},
+				"south": {"uv": [10, 9, 16, 10], "texture": "#2"},
+				"west": {"uv": [10, 9, 16, 10], "texture": "#2"},
+				"up": {"uv": [4, 4, 2, 2], "rotation": 180, "texture": "#3"},
+				"down": {"uv": [16, 10, 10, 16], "texture": "#2"}
+			}
+		},
+		{
+			"from": [7.5, 13.2, 1.5],
+			"to": [8.5, 14.2, 5.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 13.7, 8]},
+			"faces": {
+				"north": {"uv": [9, 7, 10, 8], "texture": "#2"},
+				"east": {"uv": [9, 7, 13, 8], "texture": "#2"},
+				"south": {"uv": [9, 7, 10, 8], "texture": "#2"},
+				"west": {"uv": [9, 7, 13, 8], "texture": "#2"},
+				"up": {"uv": [10, 11, 9, 7], "texture": "#2"},
+				"down": {"uv": [10, 7, 9, 11], "texture": "#2"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "group",
+			"origin": [8, 8, 8],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1]
+		},
+		2
+	]
+}

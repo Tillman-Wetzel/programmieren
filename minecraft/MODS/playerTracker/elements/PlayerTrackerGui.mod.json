@@ -1,0 +1,131 @@
+{
+  "_fv": 89,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 170,
+    "height": 96,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_add_yourself",
+          "text": "Add Yourself",
+          "isUndecorated": false,
+          "onClick": "AddYourselfButtonPressed",
+          "displayCondition": "IsPlayerNotChosen",
+          "width": 85,
+          "height": 20,
+          "x": 141,
+          "y": 139,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_player_to_track",
+          "text": {
+            "fixedValue": "Player To Track:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 141,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_playername",
+          "text": {
+            "fixedValue": "Playername",
+            "name": "SetGuiTextPlayername"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "displayCondition": "IsPlayerChosen",
+          "x": 141,
+          "y": 142,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_x",
+          "text": "X",
+          "isUndecorated": false,
+          "onClick": "RemoveYourselfButtonPressed",
+          "displayCondition": "IsPlayerChosen",
+          "width": 10,
+          "height": 20,
+          "x": 276,
+          "y": 138,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_set_mode_label",
+          "text": {
+            "fixedValue": "ModeLabel",
+            "name": "SetModeLabel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 168,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_toggle_mode",
+          "text": "Toggle mode",
+          "isUndecorated": false,
+          "onClick": "ToggleMode",
+          "width": 75,
+          "height": 20,
+          "x": 141,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "UseYCheckbox",
+          "text": "Use Y",
+          "isCheckedProcedure": "GetUseY",
+          "x": 240,
+          "y": 98,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 27,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

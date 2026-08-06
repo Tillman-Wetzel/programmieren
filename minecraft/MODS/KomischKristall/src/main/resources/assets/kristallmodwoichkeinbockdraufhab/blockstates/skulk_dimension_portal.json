@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "kristallmodwoichkeinbockdraufhab:block/skulk_dimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "kristallmodwoichkeinbockdraufhab:block/skulk_dimension_portal_ns"
+    }
+  }
+}

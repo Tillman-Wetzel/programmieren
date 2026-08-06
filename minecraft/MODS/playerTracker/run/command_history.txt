@@ -1,0 +1,47 @@
+/setblock 7 -60 0 playertracker:player_tracker_block
+/setblock 7 -60 -2 playertracker:player_tracker_block[ is_player_chosen= true ]
+/setblock 7 -60 -2 playertracker:player_tracker_block[ is_player_chosen= false ]
+/data get block 7 -60 -2
+/time set day
+/enchant @a minecraft:density 5
+/tp ~ ~200 ~
+/tick rate 1
+/tp ~ ~150 ~
+/enchant @a minecraft:wind_burst
+/enchant @a minecraft:wind_burst 3
+/enchant @a minecraft:density 5
+/tick rate 1
+/tick rate 2
+/give @a minecraft:netherite_
+/give @a minecraft:netherite_sword[minecraft:enchantments=
+/give @a minecraft:netherite_sword[minecraft:enchantments={"lunge"}]
+/give @a minecraft:netherite_sword[minecraft:enchantments={}]
+/tick rate 20
+/kill
+/data get block 4 -60 -8
+/gamemode survival
+/data get block 9 -60 -9
+/setblock 9 -60 -9
+/setblock 9 -60 -9 playertracker:player_tracker_block
+/data get block 9 -60 -9
+/data get block 8 -60 -9
+/data get entity @s
+/data get entity @s UUID
+/data get entity 94ddc4e8-2fd3-4095-950c-56ad0c0299ea UUID
+/data get block 9 -60 -9
+/data get entity @s UUID
+/updateblock -12 -60 17
+/updateblock -13 -60 3
+/updateblock -11 -58 2
+/fill 12 -60 32
+/fill 12 -60 32 12 -60 84 linearbearing:linear_casing
+/fill 20481026 135 20481022
+/fill 20481026 135 20481022 20481032 132 20481032 aeronautics:blue_envelope
+/fill 20481026 135 20481022 20481032 132 20481032 aeronautics:air
+/fill 20481026 135 20481022 20481032 132 20481032 air
+/fill 20481026 135 20481022 20481032 132 20481032 aeronautics:blue_envelope
+/fill 20481026 135 20481022 20481032 132 20481032 air
+/fill 20481026 135 20481022 20481032 132 20481032 aeronautics:blue_envelope
+/gamerule doDaylightCycle false
+/time set day
+/data get block 19 -60 89

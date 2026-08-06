@@ -1,0 +1,32 @@
+/place structure minecraft:ancient_city
+/place structure minecraft:ancient_city ~ ~ ~
+/locate structure minecraft:ancient_city
+/tp @s -288 ~ -368
+/effect give @a minecraft:night_vision infinite
+/effect give @a minecraft:night_vision infinite 0 true
+/tp @s -288 ~ -368
+/effect give @a minecraft:night_vision infinite 0 true
+/tp @s -288 ~ -368
+/setblock -563 85 -561 minecraft:lever
+/setblock -563 85 -561 minecraft:lever[ face= floor ]
+/setblock -563 85 -561 minecraft:oak_pressure_plate
+/tp @s -288 ~ -368
+/give @a kristallmodwoichkeinbockdraufhab:skulk_dimension
+/enchant @a minecraft:projectile_protection 4
+/gamerule keep_inventory true
+/time set minecraft:day
+/setblock ~ ~ ~ kristallmodwoichkeinbockdraufhab:kristal_dimension_portal
+/effect give @s minecraft:night_vision
+/kill @e[type=!minecraft:player,type=!kristallmodwoichkeinbockdraufhab:krystal_spider ]
+/effect give @s minecraft:night_vision infinite 0 true
+/kill @e[type=!minecraft:player,type=!kristallmodwoichkeinbockdraufhab:krystal_spider ]
+/setblock ~ ~ ~ kristallmodwoichkeinbockdraufhab:kristal_dimension_portal
+/effect give @s minecraft:night_vision infinite 0 true
+/enchant @a
+/enchant @a minecraft:loyalty 3
+/effect give @s minecraft:night_vision infinite 0 true
+/setblock ~ ~ ~ kristallmodwoichkeinbockdraufhab:kristal_dimension_portal
+/enchant @a minecraft:density
+/enchant @a minecraft:density 5
+/enchant @a minecraft:wind_burst 3
+/tp ~ ~15 ~

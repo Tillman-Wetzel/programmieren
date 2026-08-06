@@ -16,6 +16,7 @@ public class Abfrage implements ActionListener{
     Button abgebenButton;
 
     Abfrage(String ausgangssprache, String zielsprache) {
+        
         this.erstelleAbfrage(ausgangssprache, zielsprache);
     }
 

@@ -1,0 +1,210 @@
+{
+  "mod_elements": [
+    {
+      "name": "KristallSplitter",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kristall_splitter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/models/item/kristall_splitter.json",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/items/kristall_splitter.json",
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/item/KristallSplitterItem.java"
+        ]
+      },
+      "path": "~/CrytalDimension"
+    },
+    {
+      "name": "Kristalle",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kristalle",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/CrytalDimension"
+    },
+    {
+      "name": "KristalDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kristal_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/world/teleporter/KristalDimensionTeleporter.java",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/items/kristal_dimension.json",
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/world/teleporter/KristalDimensionPortalShape.java",
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/item/KristalDimensionItem.java",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/models/item/kristal_dimension.json",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/models/block/kristal_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/block/KristalDimensionPortalBlock.java",
+          "src/main/resources/data/kristallmodwoichkeinbockdraufhab/dimension/kristal_dimension.json",
+          "src/main/resources/data/kristallmodwoichkeinbockdraufhab/dimension_type/kristal_dimension.json",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/blockstates/kristal_dimension_portal.json",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/models/block/kristal_dimension_portal_ns.json"
+        ]
+      },
+      "path": "~/CrytalDimension"
+    },
+    {
+      "name": "CraftBuddingAmethyst",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_budding_amethyst",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/kristallmodwoichkeinbockdraufhab/recipe/craft_budding_amethyst.json",
+          "src/main/resources/data/kristallmodwoichkeinbockdraufhab/advancement/recipes/craft_budding_amethyst.json"
+        ]
+      },
+      "path": "~/CrytalDimension"
+    },
+    {
+      "name": "SkulkDimensionCanTravelThroughPortal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skulk_dimension_can_travel_through_portal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/procedures/SkulkDimensionCanTravelThroughPortalProcedure.java"
+        ]
+      },
+      "path": "~/SkulkDimension"
+    },
+    {
+      "name": "SkulkDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skulk_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/world/teleporter/SkulkDimensionTeleporter.java",
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/world/teleporter/SkulkDimensionPortalShape.java",
+          "src/main/resources/data/kristallmodwoichkeinbockdraufhab/dimension/skulk_dimension.json",
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/item/SkulkDimensionItem.java",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/models/item/skulk_dimension.json",
+          "src/main/resources/data/kristallmodwoichkeinbockdraufhab/dimension_type/skulk_dimension.json",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/models/block/skulk_dimension_portal_ew.json",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/blockstates/skulk_dimension_portal.json",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/models/block/skulk_dimension_portal_ns.json",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/items/skulk_dimension.json",
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/block/SkulkDimensionPortalBlock.java"
+        ]
+      },
+      "path": "~/SkulkDimension"
+    },
+    {
+      "name": "KrystalSpiderNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "krystal_spider_natural_entity_spawning_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "dimension",
+            "type": "dimensiontype"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/procedures/KrystalSpiderNaturalEntitySpawningConditionProcedure.java"
+        ]
+      },
+      "path": "~/CrytalDimension"
+    },
+    {
+      "name": "KrystalSpider",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "krystal_spider",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/models/item/krystal_spider_spawn_egg.json",
+          "src/main/resources/assets/kristallmodwoichkeinbockdraufhab/items/krystal_spider_spawn_egg.json",
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/client/renderer/KrystalSpiderRenderer.java",
+          "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/entity/KrystalSpiderEntity.java",
+          "src/main/resources/data/kristallmodwoichkeinbockdraufhab/neoforge/biome_modifier/krystal_spider_biome_modifier.json"
+        ]
+      },
+      "path": "~/CrytalDimension"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~KristalDimension@Blocks.AMETHYST_BLOCK",
+      "~SkulkDimension@Blocks.SCULK"
+    ],
+    "ITEMS:minecraft:piglin_loved": [
+      "~KristallSplitter@CUSTOM:KristallSplitter"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.kristallmodwoichkeinbockdraufhab.kristall_splitter": "Kristall Splitter",
+      "item_group.kristallmodwoichkeinbockdraufhab.kristalle": "LustigeKristalle",
+      "item.kristallmodwoichkeinbockdraufhab.kristal_dimension": "Kristal Dimension Portal Igniter",
+      "item.kristallmodwoichkeinbockdraufhab.skulk_dimension": "Skulk And Steel",
+      "item.kristallmodwoichkeinbockdraufhab.krystal_spider_spawn_egg": "Krystal Spider Spawn Egg",
+      "entity.kristallmodwoichkeinbockdraufhab.krystal_spider": "Krystal Spider"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/init/KristallmodwoichkeinbockdraufhabModBlocks.java",
+      "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/init/KristallmodwoichkeinbockdraufhabModItems.java",
+      "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/init/KristallmodwoichkeinbockdraufhabModEntityRenderers.java",
+      "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/init/KristallmodwoichkeinbockdraufhabModEntities.java",
+      "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/KristallmodwoichkeinbockdraufhabMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/kristallmodwoichkeinbockdraufhab/init/KristallmodwoichkeinbockdraufhabModTabs.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "CrytalDimension",
+        "children": []
+      },
+      {
+        "name": "SkulkDimension",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "kristallmodwoichkeinbockdraufhab",
+    "modName": "KristallModWoIchKeinBockDraufHabe",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-26.1.2",
+    "modElementsPackage": "net.mcreator.kristallmodwoichkeinbockdraufhab"
+  },
+  "mcreatorVersion": 202600230420
+}

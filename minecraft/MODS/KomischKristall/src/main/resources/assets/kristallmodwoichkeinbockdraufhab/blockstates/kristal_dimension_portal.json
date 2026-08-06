@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "kristallmodwoichkeinbockdraufhab:block/kristal_dimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "kristallmodwoichkeinbockdraufhab:block/kristal_dimension_portal_ns"
+    }
+  }
+}

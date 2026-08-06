@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aba",
+    "cdc",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "c": {
+      "item": "minecraft:comparator"
+    },
+    "d": {
+      "item": "minecraft:compass"
+    },
+    "e": {
+      "tag": "minecraft:logs"
+    },
+    "f": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "id": "playertracker:player_tracker_block",
+    "count": 1
+  }
+}
