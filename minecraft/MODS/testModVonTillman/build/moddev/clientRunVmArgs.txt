@@ -4,6 +4,13 @@
 java.base/java.lang.invoke=ALL-UNNAMED
 --add-exports
 jdk.naming.dns/com.sun.jndi.dns=java.naming
+
+# User JVM Arguments
+-Dcom.sun.management.jmxremote.port=1099
+-Dcom.sun.management.jmxremote.local.only=true
+-Dcom.sun.management.jmxremote.ssl=false
+-Dcom.sun.management.jmxremote.authenticate=false
+
 -Dlog4j2.configurationFile=/home/tillman/Desktop/programmieren/minecraft/MODS/testModVonTillman/build/moddev/clientLog4j2.xml
 -Djava.net.preferIPv6Addresses=system
 -Dneoforge.enableGameTest=true

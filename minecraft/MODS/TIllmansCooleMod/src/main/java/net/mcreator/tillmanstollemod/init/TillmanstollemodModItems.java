@@ -17,9 +17,11 @@ import java.util.function.Function;
 public class TillmanstollemodModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(TillmanstollemodMod.MODID);
 	public static final DeferredItem<Item> LIGHTNING_SWORD;
+	public static final DeferredItem<Item> TILLMANS_ARMOR_LEGGINGS;
 	public static final DeferredItem<Item> TILLMANS_ARMOR_BOOTS;
 	static {
 		LIGHTNING_SWORD = register("lightning_sword", LightningSwordItem::new);
+		TILLMANS_ARMOR_LEGGINGS = register("tillmans_armor_leggings", TillmansArmorItem.Leggings::new);
 		TILLMANS_ARMOR_BOOTS = register("tillmans_armor_boots", TillmansArmorItem.Boots::new);
 	}
 

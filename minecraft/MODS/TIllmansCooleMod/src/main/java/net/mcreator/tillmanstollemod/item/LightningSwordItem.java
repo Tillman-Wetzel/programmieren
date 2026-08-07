@@ -28,7 +28,7 @@ public class LightningSwordItem extends Item {
 
 	@Override
 	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
-		return 2;
+		return 10;
 	}
 
 	@Override

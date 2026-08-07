@@ -1,35 +1,39 @@
+
 package net.mcreator.testmodvontillman.procedures;
 
-import net.minecraft.commands.CommandSourceStack; 
-import net.minecraft.commands.arguments.EntityArgument;
-import 
+import com.mojang.brigadier.context.CommandContext;
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Player;
 
 public class SetFoodLevelProcedureProcedure {
-	public static void execute(CommandContext<CommandSourceStack> arguments, Entity entity, int nextFoodLevel, int nextSaturationLevel, boolean targetsAreGiven) {
+
+	public static void execute(CommandContext arguments, Entity entity, double nextFoodLevel, double nextSaturationLevel, boolean targetsAreGiven) {
 		if (entity == null)
 			return;
 
 		if (targetsAreGiven) {
 			try {
-				for (Entity entityiterator : EntityArgument.getEntities(arguments, "players")) {
-					if (entityiterator instanceof Player _player)
-						_player.getFoodData().setFoodLevel(nextFoodLevel);
-			
-					if (entityiterator instanceof Player _player)
-						_player.getFoodData().setSaturation(nextSaturationLevel);
+				for (Object object : EntityArgument.getEntities(arguments, "players")) {
+
+					if (object instanceof Player _player)
+						_player.getFoodData().setFoodLevel((int) nextFoodLevel);
+
+					if (object instanceof Player _player)
+						_player.getFoodData().setSaturation((float) nextSaturationLevel);
 				}
 			} catch (CommandSyntaxException e) {
 				System.out.println(e);
-			} 
+			}
 		} else {
+
 			if (entity instanceof Player _player)
-				_player.getFoodData().setFoodLevel(nextFoodLevel);
-			
+				_player.getFoodData().setFoodLevel((int) nextFoodLevel);
+
 			if (entity instanceof Player _player)
-				_player.getFoodData().setSaturation(nextSaturationLevel);
+				_player.getFoodData().setSaturation((float) nextSaturationLevel);
 		}
 	}
 }

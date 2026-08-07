@@ -24,12 +24,14 @@ public class TillmanstollemodModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TILLMANS_COOLE_ITEMS = REGISTRY.register("tillmans_coole_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tillmanstollemod.tillmans_coole_items")).icon(() -> new ItemStack(Blocks.LIGHT)).displayItems((parameters, tabData) -> {
 				tabData.accept(TillmanstollemodModItems.LIGHTNING_SWORD.get());
+				tabData.accept(TillmanstollemodModItems.TILLMANS_ARMOR_LEGGINGS.get());
 				tabData.accept(TillmanstollemodModItems.TILLMANS_ARMOR_BOOTS.get());
 			}).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(TillmanstollemodModItems.TILLMANS_ARMOR_LEGGINGS.get());
 			tabData.accept(TillmanstollemodModItems.TILLMANS_ARMOR_BOOTS.get());
 		}
 	}

@@ -105,6 +105,7 @@
           "src/main/java/net/mcreator/tillmanstollemod/item/TillmansArmorItem.java",
           "src/main/resources/assets/tillmanstollemod/equipment/tillmans_armor.json",
           "src/main/resources/assets/tillmanstollemod/items/tillmans_armor_boots.json",
+          "src/main/resources/assets/tillmanstollemod/models/item/tillmans_armor_leggings.json",
           "src/main/resources/assets/tillmanstollemod/models/item/tillmans_armor_boots.json",
           "src/main/java/net/mcreator/tillmanstollemod/client/renderer/item/TillmansArmorArmor.java",
           "src/main/resources/assets/tillmanstollemod/items/tillmans_armor_chestplate.json",
@@ -112,11 +113,32 @@
           "src/main/resources/assets/tillmanstollemod/items/tillmans_armor_helmet.json"
         ]
       }
+    },
+    {
+      "name": "TillmansArmorLeggingsTickEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tillmans_armor_leggings_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/tillmanstollemod/procedures/TillmansArmorLeggingsTickEventProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
+    "ITEMS:minecraft:leg_armor": [
+      "~TillmansArmor@CUSTOM:TillmansArmor.legs"
+    ],
     "ITEMS:minecraft:foot_armor": [
       "~TillmansArmor@CUSTOM:TillmansArmor.boots"
     ]
@@ -129,7 +151,8 @@
       "gamerule.tillmanstollemod.let_everyone_fly": "Everyone can fly",
       "item_group.tillmanstollemod.tillmans_coole_items": "Tillmans Coole Items",
       "item.tillmanstollemod.lightning_sword": "Lightning Sword",
-      "item.tillmanstollemod.tillmans_armor_boots": "Boots of flight"
+      "item.tillmanstollemod.tillmans_armor_boots": "Boots of flight",
+      "item.tillmanstollemod.tillmans_armor_leggings": "Boots of Fire Resistance"
     }
   },
   "metadata": {

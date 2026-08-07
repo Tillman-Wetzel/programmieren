@@ -20,3 +20,4 @@
 /attribute @s tillmanstollemod:can_fly modifier value get
 /attribute @s tillmanstollemod:can_fly modifier value
 /attribute @s tillmanstollemod:can_fly get
+/attribute @s tillmanstollemod:can_fly base set 0

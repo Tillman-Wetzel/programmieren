@@ -36,7 +36,7 @@ public class SetFoodLevelCommand {
 					if (entity != null)
 						direction = entity.getDirection();
 
-					SetFoodLevelProcedureProcedure.execute(arguments, entity, DoubleArgumentType.getDouble(argument, "foodValue"), DoubleArgumentType.getDouble(argument, "saturation"), true);
+					SetFoodLevelProcedureProcedure.execute(arguments, entity, DoubleArgumentType.getDouble(arguments, "foodValue"), DoubleArgumentType.getDouble(arguments, "saturation"), true);
 					return 0;
 				})).executes(arguments -> {
 					Level world = arguments.getSource().getUnsidedLevel();
@@ -50,7 +50,7 @@ public class SetFoodLevelCommand {
 					if (entity != null)
 						direction = entity.getDirection();
 
-					SetFoodLevelProcedureProcedure.execute(arguments, entity, DoubleArgumentType.getDouble(argument, "foodValue"), DoubleArgumentType.getDouble(argument, "saturation"), false);
+					SetFoodLevelProcedureProcedure.execute(arguments, entity, DoubleArgumentType.getDouble(arguments, "foodValue"), DoubleArgumentType.getDouble(arguments, "saturation"), false);
 					return 0;
 				}))));
 	}

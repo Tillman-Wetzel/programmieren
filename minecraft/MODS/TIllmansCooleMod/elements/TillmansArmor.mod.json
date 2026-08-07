@@ -6,10 +6,11 @@
     "textureHelmet": "tillmansarmor_head",
     "enableBody": false,
     "textureBody": "tillmansarmor_body",
-    "enableLeggings": false,
+    "enableLeggings": true,
     "textureLeggings": "tillmansarmor_leggings",
     "enableBoots": true,
     "textureBoots": "tillmansarmor_boots",
+    "onLeggingsTick": "TillmansArmorLeggingsTickEvent",
     "creativeTabs": [
       "COMBAT",
       "CUSTOM:TillmansCooleItems"
@@ -17,7 +18,7 @@
     "armorTextureFile": "tillmansarmor",
     "helmetName": "Tillmans Armor Helmet",
     "bodyName": "Tillmans Armor Chestplate",
-    "leggingsName": "Tillmans Armor Leggings",
+    "leggingsName": "Boots of Fire Resistance",
     "bootsName": "Boots of flight",
     "helmetSpecialInformation": {
       "fixedValue": []
@@ -109,6 +110,18 @@
           false,
           false,
           true
+        ]
+      },
+      {
+        "equipmentSlot": "legs",
+        "attribute": "BURNING_TIME",
+        "amount": 0.0,
+        "operation": "ADD_MULTIPLIED_BASE",
+        "armorPieces": [
+          false,
+          false,
+          true,
+          false
         ]
       }
     ]

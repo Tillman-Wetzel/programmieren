@@ -25,7 +25,7 @@ public class TeapotOnBlockRightclickedProcedure {
 		if (entity == null)
 			return InteractionResult.PASS;
 		InteractionResult actionResult = InteractionResult.PASS;
-		if (getFluidTankCapacity(world, BlockPos.containing(x, y, z), 1, null) == 0) {
+		if (getFluidTankLevel(world, BlockPos.containing(x, y, z), 0, null) == 0) {
 			if ((executeCommandGetResult(entity, "execute if items entity @s weapon.mainhand testmod_von_tillman:hot_water_bucket run item replace entity @s weapon.mainhand with minecraft:bucket 1")).startsWith("Replaced")) {
 				if (world instanceof ILevelExtension _ext) {
 					if (_ext.getCapability(Capabilities.Fluid.BLOCK, BlockPos.containing(x, y, z), null) instanceof ResourceHandler<FluidResource> _fluidHandler) {
@@ -61,10 +61,10 @@ public class TeapotOnBlockRightclickedProcedure {
 		return actionResult;
 	}
 
-	private static int getFluidTankCapacity(LevelAccessor level, BlockPos pos, int tank, Direction direction) {
+	private static int getFluidTankLevel(LevelAccessor level, BlockPos pos, int tank, Direction direction) {
 		if (level instanceof ILevelExtension levelExtension) {
 			if (levelExtension.getCapability(Capabilities.Fluid.BLOCK, pos, direction) instanceof ResourceHandler<FluidResource> fluidHandler)
-				return fluidHandler.getCapacityAsInt(tank, FluidResource.EMPTY);
+				return net.neoforged.neoforge.transfer.fluid.FluidUtil.getStack(fluidHandler, tank).amount();
 		}
 		return 0;
 	}

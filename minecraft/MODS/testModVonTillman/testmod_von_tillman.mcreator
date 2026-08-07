@@ -92,7 +92,7 @@
     {
       "name": "SetFoodLevel",
       "type": "command",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "set_food_level",
       "metadata": {
@@ -105,7 +105,7 @@
     {
       "name": "SetFoodLevelProcedure",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "set_food_level_procedure",
       "metadata": {
@@ -329,7 +329,7 @@
       "name": "Teapot",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "teapot",
       "metadata": {
         "files": [
