@@ -3,6 +3,8 @@ package Grenzklassen;
 import java.awt.*;
 import java.awt.event.*;
 
+import EntityKlassen.EntityFactory;
+
 public class Abfrage implements ActionListener{
     Frame vokabeltrainerAnsicht;
 
@@ -16,7 +18,7 @@ public class Abfrage implements ActionListener{
     Button abgebenButton;
 
     Abfrage(String ausgangssprache, String zielsprache) {
-        
+        EntityFactory.erstelleVokabel(ausgangssprache, zielsprache);
         this.erstelleAbfrage(ausgangssprache, zielsprache);
     }
 

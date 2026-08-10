@@ -7,6 +7,6 @@ net.neoforged.fml.startup.Client
 --assetIndex
 30
 --assetsDir
-/home/tillman/.mcreator/gradle/caches/neoformruntime/assets
+/home/tillman/.gradle/caches/neoformruntime/assets
 
 # User Supplied Program Arguments

@@ -1,46 +1,49 @@
 {
   "stats": {
+    "minecraft:custom": {
+      "minecraft:talked_to_villager": 5,
+      "minecraft:time_since_rest": 188,
+      "minecraft:walk_one_cm": 22594,
+      "minecraft:leave_game": 5,
+      "minecraft:mob_kills": 2,
+      "minecraft:damage_taken": 1557,
+      "minecraft:damage_dealt": 721,
+      "minecraft:play_time": 30328,
+      "minecraft:jump": 152,
+      "minecraft:time_since_death": 151,
+      "minecraft:drop": 2,
+      "minecraft:sprint_one_cm": 19164,
+      "minecraft:fall_one_cm": 4212,
+      "minecraft:total_world_time": 34704,
+      "minecraft:fly_one_cm": 123741,
+      "minecraft:crouch_one_cm": 1327,
+      "minecraft:sneak_time": 709,
+      "minecraft:deaths": 4
+    },
+    "minecraft:dropped": {
+      "easy_villagers:iron_farm": 1,
+      "easy_villagers:villager": 1
+    },
     "minecraft:killed": {
       "minecraft:witch": 2
     },
-    "minecraft:custom": {
-      "minecraft:talked_to_villager": 5,
-      "minecraft:time_since_rest": 1502,
-      "minecraft:walk_one_cm": 16524,
-      "minecraft:leave_game": 4,
-      "minecraft:mob_kills": 2,
-      "minecraft:damage_taken": 909,
-      "minecraft:damage_dealt": 721,
-      "minecraft:play_time": 24309,
-      "minecraft:jump": 124,
-      "minecraft:time_since_death": 1474,
-      "minecraft:drop": 2,
-      "minecraft:sprint_one_cm": 13150,
-      "minecraft:fall_one_cm": 4212,
-      "minecraft:total_world_time": 25085,
-      "minecraft:fly_one_cm": 104618,
-      "minecraft:crouch_one_cm": 1327,
-      "minecraft:sneak_time": 708,
-      "minecraft:deaths": 3
+    "minecraft:used": {
+      "minecraft:splash_potion": 8,
+      "tillmanstollemod:tillmans_armor_leggings": 2,
+      "easy_villagers:iron_farm": 1,
+      "minecraft:glass_pane": 28,
+      "tillmanstollemod:tillmans_armor_boots": 4,
+      "easy_villagers:villager": 14,
+      "minecraft:sandstone": 22,
+      "minecraft:golden_carrot": 1
     },
     "minecraft:picked_up": {
       "tillmanstollemod:lightning_sword": 2,
       "tillmanstollemod:tillmans_armor_boots": 1,
       "minecraft:redstone": 7
     },
-    "minecraft:dropped": {
-      "easy_villagers:iron_farm": 1,
-      "easy_villagers:villager": 1
-    },
     "minecraft:mined": {
-      "minecraft:fire": 7
-    },
-    "minecraft:used": {
-      "easy_villagers:iron_farm": 1,
-      "minecraft:glass_pane": 28,
-      "tillmanstollemod:tillmans_armor_boots": 4,
-      "easy_villagers:villager": 14,
-      "minecraft:sandstone": 22
+      "minecraft:fire": 13
     }
   },
   "DataVersion": 4790

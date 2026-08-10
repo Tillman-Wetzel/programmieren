@@ -5,6 +5,7 @@ public class Vokabel {
     private String zielsprache;
     private String ausgangswort;
     private String zielwort;
+    private int anzahlVokabeln;
 
     Vokabel(String ausgangsspracheTemporaer, String zielspracheTemporaer) {
         ausgangssprache = ausgangsspracheTemporaer;
