@@ -1,0 +1,53 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Client",
+      "presentation": {
+        "group": "Mod Development - newplayernames",
+        "order": 0
+      },
+      "projectName": "newplayernames",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@/home/tillman/Desktop/programmieren/minecraft/MODS/newplayernames/build/moddev/clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@/home/tillman/Desktop/programmieren/minecraft/MODS/newplayernames/build/moddev/clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmcreator%%/home/tillman/Desktop/programmieren/minecraft/MODS/newplayernames/bin/main"
+      ],
+      "cwd": "${workspaceFolder}/run",
+      "env": {
+        "MOD_CLASSES": "mcreator%%/home/tillman/Desktop/programmieren/minecraft/MODS/newplayernames/bin/main"
+      },
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Server",
+      "presentation": {
+        "group": "Mod Development - newplayernames",
+        "order": 1
+      },
+      "projectName": "newplayernames",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@/home/tillman/Desktop/programmieren/minecraft/MODS/newplayernames/build/moddev/serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@/home/tillman/Desktop/programmieren/minecraft/MODS/newplayernames/build/moddev/serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmcreator%%/home/tillman/Desktop/programmieren/minecraft/MODS/newplayernames/bin/main"
+      ],
+      "cwd": "${workspaceFolder}/run",
+      "env": {
+        "MOD_CLASSES": "mcreator%%/home/tillman/Desktop/programmieren/minecraft/MODS/newplayernames/bin/main"
+      },
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    }
+  ]
+}

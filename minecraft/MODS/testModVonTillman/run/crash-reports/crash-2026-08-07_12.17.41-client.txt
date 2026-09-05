@@ -1,0 +1,171 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 2026-08-07 12:17:41
+Description: Unexpected error
+
+java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100) ~[?:?] {}
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106) ~[?:?] {}
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302) ~[?:?] {}
+	at java.base/java.util.Objects.checkIndex(Objects.java:365) ~[?:?] {}
+	at TRANSFORMER/neoforge@26.1.2.71/net.neoforged.neoforge.transfer.StacksResourceHandler.getCapacityAsLong(StacksResourceHandler.java:232) ~[neoforge-26.1.2.71-universal.jar:?] {}
+	at TRANSFORMER/neoforge@26.1.2.71/net.neoforged.neoforge.transfer.ResourceHandler.getCapacityAsInt(ResourceHandler.java:131) ~[neoforge-26.1.2.71-universal.jar:?] {}
+	at TRANSFORMER/testmod_von_tillman@1.0.0/net.mcreator.testmodvontillman.procedures.TeapotOnBlockRightclickedProcedure.getFluidTankCapacity(TeapotOnBlockRightclickedProcedure.java:67) ~[main/:?] {}
+	at TRANSFORMER/testmod_von_tillman@1.0.0/net.mcreator.testmodvontillman.procedures.TeapotOnBlockRightclickedProcedure.execute(TeapotOnBlockRightclickedProcedure.java:28) ~[main/:?] {}
+	at TRANSFORMER/testmod_von_tillman@1.0.0/net.mcreator.testmodvontillman.block.TeapotBlock.useWithoutItem(TeapotBlock.java:95) ~[main/:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase.useWithoutItem(BlockBehaviour.java:784) ~[minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.multiplayer.MultiPlayerGameMode.performUseItemOn(MultiPlayerGameMode.java:381) ~[minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.multiplayer.MultiPlayerGameMode.lambda$useItemOn$0(MultiPlayerGameMode.java:343) ~[minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.multiplayer.MultiPlayerGameMode.startPrediction(MultiPlayerGameMode.java:309) ~[minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.multiplayer.MultiPlayerGameMode.useItemOn(MultiPlayerGameMode.java:342) ~[minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.startUseItem(Minecraft.java:1805) ~[minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.handleKeybinds(Minecraft.java:2102) [minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.tick(Minecraft.java:1905) [minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.runTick(Minecraft.java:1308) [minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.run(Minecraft.java:937) [minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.main.Main.main(Main.java:246) [minecraft-patched-26.1.2.71.jar:?] {}
+	at net.neoforged.fml.startup.Client.main(Client.java:19) [loader-11.0.13.jar:11.0] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?] {}
+	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100) ~[?:?] {}
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106) ~[?:?] {}
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302) ~[?:?] {}
+	at java.base/java.util.Objects.checkIndex(Objects.java:365) ~[?:?] {}
+	at TRANSFORMER/neoforge@26.1.2.71/net.neoforged.neoforge.transfer.StacksResourceHandler.getCapacityAsLong(StacksResourceHandler.java:232) ~[neoforge-26.1.2.71-universal.jar:?] {}
+	at TRANSFORMER/neoforge@26.1.2.71/net.neoforged.neoforge.transfer.ResourceHandler.getCapacityAsInt(ResourceHandler.java:131) ~[neoforge-26.1.2.71-universal.jar:?] {}
+	at TRANSFORMER/testmod_von_tillman@1.0.0/net.mcreator.testmodvontillman.procedures.TeapotOnBlockRightclickedProcedure.getFluidTankCapacity(TeapotOnBlockRightclickedProcedure.java:67) ~[main/:?] {}
+	at TRANSFORMER/testmod_von_tillman@1.0.0/net.mcreator.testmodvontillman.procedures.TeapotOnBlockRightclickedProcedure.execute(TeapotOnBlockRightclickedProcedure.java:28) ~[main/:?] {}
+	at TRANSFORMER/testmod_von_tillman@1.0.0/net.mcreator.testmodvontillman.block.TeapotBlock.useWithoutItem(TeapotBlock.java:95) ~[main/:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase.useWithoutItem(BlockBehaviour.java:784) ~[minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.multiplayer.MultiPlayerGameMode.performUseItemOn(MultiPlayerGameMode.java:381) ~[minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.multiplayer.MultiPlayerGameMode.lambda$useItemOn$0(MultiPlayerGameMode.java:343) ~[minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.multiplayer.MultiPlayerGameMode.startPrediction(MultiPlayerGameMode.java:309) ~[minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.multiplayer.MultiPlayerGameMode.useItemOn(MultiPlayerGameMode.java:342) ~[minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.startUseItem(Minecraft.java:1805) ~[minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.handleKeybinds(Minecraft.java:2102) ~[minecraft-patched-26.1.2.71.jar:?] {}
+-- Uptime --
+Details:
+	JVM uptime: 126.407s
+	Wall uptime: 118.554s
+	High-res time: 125.467s
+	Client ticks: 2303 ticks / 115.150s
+Stacktrace:
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.fillReport(Minecraft.java:2472) [minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.emergencySaveAndCrash(Minecraft.java:992) [minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.run(Minecraft.java:960) [minecraft-patched-26.1.2.71.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.main.Main.main(Main.java:246) [minecraft-patched-26.1.2.71.jar:?] {}
+	at net.neoforged.fml.startup.Client.main(Client.java:19) [loader-11.0.13.jar:11.0] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?] {}
+	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; LocalPlayer{name=Dev, id=118, pos=(-111.99914008042343, 173.0, 675.9238254782467), mode=CREATIVE, permission=owner}
+	Chunk stats: 289, 157
+	Level dimension: minecraft:overworld
+	Level time: 1012576 game time, 1000 day time
+	Level spawn location: World: (0,173,600), Section: (at 0,13,8 in 0,10,37; chunk contains blocks 0,-64,592 to 15,319,607), Region: (0,1; contains chunks 0,32 to 31,63, blocks 0,-64,512 to 511,319,1023)
+	Server brand: neoforge
+	Server type: Integrated singleplayer server
+	Tracked entity count: 141
+	Client weather: Raining: false, thundering: false
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: vanilla, mod_resources, mod/neoforge, mod/testmod_von_tillman
+
+-- System Details --
+Details:
+	Minecraft Version: 26.1.2
+	Minecraft Version ID: 26.1.2
+	Operating System: Linux (amd64) version 7.0.0-29-generic
+	Java Version: 25.0.2, JetBrains s.r.o.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), JetBrains s.r.o.
+	Memory: 334096904 bytes (318 MiB) / 813694976 bytes (776 MiB) up to 8124366848 bytes (7748 MiB)
+	Memory (heap): init: 488MiB, used: 449MiB, committed: 776MiB, max: 7748MiB
+	Memory (non-head): init: 007MiB, used: 208MiB, committed: 230MiB, max: 000MiB
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 3800X 8-Core Processor
+	Identifier: AuthenticAMD Family 23 Model 113 Stepping 0
+	Microarchitecture: Zen 2
+	Frequency (GHz): 4.56
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: GA106 [GeForce RTX 3060]
+	Graphics card #0 vendor: NVIDIA Corporation (0x10de)
+	Graphics card #0 VRAM (MiB): 288.00
+	Graphics card #0 deviceId: 0x2503
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 23687.55
+	Virtual memory used (MiB): 18839.18
+	Swap memory total (MiB): 8192.00
+	Swap memory used (MiB): 6.66
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 15357.56, total: 15495.55
+	Space in storage for workdir (MiB): available: 309855.53, total: 478562.97
+	JVM Flags: 0 total; 
+	Debug Flags: 0 total; 
+	Launched Version: 26.1.2.71
+	Backend library: LWJGL version 3.4.1+2
+	Backend API: NVIDIA GeForce RTX 3060/PCIe/SSE2 GL version 3.3.0 NVIDIA 595.84, NVIDIA Corporation
+	Window size: 1853x1011
+	GFLW Platform: x11
+	Render Extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
+	GL debug messages: 
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Universe: 400921fb54442d18
+	Type: Integrated Server
+	Transparency: regular
+	Render Distance: 5/5 chunks
+	Resource Packs: vanilla, mod_resources, mod/neoforge (incompatible), mod/testmod_von_tillman (incompatible)
+	Sound Cache: 3388652 bytes in 64 buffers
+	Current Language: en_us
+	Locale: en_US
+	System encoding: UTF-8
+	File encoding: UTF-8
+	CPU: 16x AMD Ryzen 7 3800X 8-Core Processor
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/118, l='ServerLevel[New World]', x=-112.00, y=173.00, z=675.92]]
+	Active Data Packs: vanilla, file/Standert (incompatible), mod_data, mod/neoforge, mod/testmod_von_tillman
+	Available Data Packs: minecart_improvements, redstone_experiments, trade_rebalance, vanilla, file/Standert (incompatible), mod/neoforge, mod/testmod_von_tillman, mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: -8945840348381712906
+	Suppressed Exceptions: ~~NONE~~
+	Class Processors: 
+		00.00%: neoforge:neoforge_dev_dist_cleaner
+		00.00%: neoforge:computing_frames (marker)
+		00.00%: neoforge:runtime_enum_extender
+		04.20%: neoforge:access_transformer
+		00.04%: neoforge:mixin
+		00.00%: neoforge:simple_processors_default (marker)
+		00.01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.biome.biome
+		00.01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.block.flowerpotblock
+		00.01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.levelgen.structure.structure
+		00.27%: neoforge.coremods:method_redirector
+	Mod List: 
+		minecraft-patched-26.1.2.71.jar                   |Minecraft                     |minecraft                     |26.1.2              |Manifest: NOSIGNATURE
+		neoforge-26.1.2.71-universal.jar                  |NeoForge                      |neoforge                      |26.1.2.71           |Manifest: NOSIGNATURE
+		main                                              |Testmod Von Tillman           |testmod_von_tillman           |1.0.0               |Manifest: NOSIGNATURE
+	Crash Report UUID: 6b74f601-70bb-4170-a688-a97a6aad9e71
+	FML: 11.0.13
+	NeoForge: 26.1.2.71
