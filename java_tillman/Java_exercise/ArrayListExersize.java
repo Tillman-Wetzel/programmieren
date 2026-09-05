@@ -20,17 +20,30 @@ public class ArrayListExersize {
         printBestFriends();
 
         System.out.println(bestFriends.get(1));
+
+        System.out.println("===========================");
+
+        ArrayList arrayList2 = new ArrayList<>();
+        arrayList2.add("Hi!");
+        System.out.println(arrayList2);
         
-        System.out.println(getFriendsListSize());
-    }
+        ArrayList<String> arraylist5 = printBestFriends();
 
-
-    private static void printBestFriends() {
-        for(String friend : bestFriends) {
-            System.out.println(friend);
+        for (String string3 : arraylist5) {
+            arrayList2.add(string3);
         }
+        System.out.println(arrayList2);
+
+
+        
     }
-    private static int getFriendsListSize() {
-        return bestFriends.size();
+
+
+    private static ArrayList<String> printBestFriends() {
+        ArrayList<String> arraylist5 = new ArrayList<>();
+        arraylist5.add("Hello");
+        arraylist5.add(" World!");
+        System.out.println(arraylist5);
+        return arraylist5;
     }
 }
