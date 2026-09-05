@@ -1,0 +1,18 @@
+--------------------------------------------------------------------------------
+
+Command-Line:
+ - /usr/lib/jvm/jdk-21.0.12-oracle-x64/bin/java
+ - -jar
+ - /home/tillman/.gradle/caches/modules-2/files-2.1/net.minecraftforge/mergetool/1.1.7/3d41564f78f123d64573cae7948014baf3aaba3f/mergetool-1.1.7-fatjar.jar
+ - --strip
+ - --input
+ - /home/tillman/.gradle/caches/neoformruntime/intermediate_results/rename_8f2f322d4ca26192b404af9ff54426249247aaa1_output.jar
+ - --output
+ - ./output.jar
+ - --data
+ - sas/forge.sas
+--------------------------------------------------------------------------------
+
+Input:  /home/tillman/.gradle/caches/neoformruntime/intermediate_results/rename_8f2f322d4ca26192b404af9ff54426249247aaa1_output.jar
+Output: /home/tillman/Desktop/programmieren/minecraft/MODS/newplayernames/build/tmp/neoformruntime/20260830-102505_stripSideAnnotations/./output.jar
+Data:   /home/tillman/Desktop/programmieren/minecraft/MODS/newplayernames/build/tmp/neoformruntime/20260830-102505_stripSideAnnotations/sas/forge.sas

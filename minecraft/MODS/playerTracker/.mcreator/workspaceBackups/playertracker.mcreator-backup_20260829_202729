@@ -1,0 +1,469 @@
+{
+  "mod_elements": [
+    {
+      "name": "PlayerTrackerBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_tracker_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/playertracker/block/entity/PlayerTrackerBlockBlockEntity.java",
+          "src/main/resources/assets/playertracker/blockstates/player_tracker_block.json",
+          "src/main/java/net/mcreator/playertracker/block/PlayerTrackerBlockBlock.java",
+          "src/main/resources/data/playertracker/loot_table/blocks/player_tracker_block.json",
+          "src/main/resources/assets/playertracker/models/block/player_tracker_block.json",
+          "src/main/resources/assets/playertracker/models/item/player_tracker_block.json"
+        ]
+      }
+    },
+    {
+      "name": "PlayerTrackerGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_tracker_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/playertracker/world/inventory/PlayerTrackerGuiMenu.java",
+          "src/main/java/net/mcreator/playertracker/network/PlayerTrackerGuiButtonMessage.java",
+          "src/main/java/net/mcreator/playertracker/client/gui/PlayerTrackerGuiScreen.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "PlayerTrackerBlockEmittedRedstonePower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_tracker_block_emitted_redstone_power",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/playertracker/procedures/PlayerTrackerBlockEmittedRedstonePowerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "IsPlayerChosen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_player_chosen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/playertracker/procedures/IsPlayerChosenProcedure.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "IsPlayerNotChosen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_player_not_chosen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/playertracker/procedures/IsPlayerNotChosenProcedure.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "AddYourselfButtonPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_yourself_button_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/playertracker/procedures/AddYourselfButtonPressedProcedure.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "RemoveYourselfButtonPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_yourself_button_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/playertracker/procedures/RemoveYourselfButtonPressedProcedure.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "SetGuiTextPlayername",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_gui_text_playername",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/playertracker/procedures/SetGuiTextPlayernameProcedure.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "PlayerTrackerBlockRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_tracker_block_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/playertracker/advancement/recipes/player_tracker_block_recepie.json",
+          "src/main/resources/data/playertracker/recipe/player_tracker_block_recepie.json"
+        ]
+      },
+      "path": "~/Recipies"
+    },
+    {
+      "name": "SetModeLabel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_mode_label",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/playertracker/procedures/SetModeLabelProcedure.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "ToggleMode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toggle_mode",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/playertracker/procedures/ToggleModeProcedure.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "UpdateBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/playertracker/procedures/UpdateBlockProcedure.java"
+        ]
+      },
+      "path": "~/commandUpdateBlock"
+    },
+    {
+      "name": "UpdateBlockCmd",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "update_block_cmd",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/playertracker/command/UpdateBlockCmdCommand.java"
+        ]
+      },
+      "path": "~/commandUpdateBlock"
+    },
+    {
+      "name": "GetIsDistanceMode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_is_distance_mode",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/playertracker/procedures/GetIsDistanceModeProcedure.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "GetUseY",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_use_y",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/playertracker/procedures/GetUseYProcedure.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "GetPlayerDirektion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_player_direktion",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/playertracker/procedures/GetPlayerDirektionProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "block.playertracker.player_tracker_block": "Player Tracker Block",
+      "gui.playertracker.player_tracker_gui.label_player_to_track": "Player To Track:",
+      "gui.playertracker.player_tracker_gui.button_add_yourself": "Add Yourself",
+      "gui.playertracker.player_tracker_gui.label_playername": "Playername",
+      "gui.playertracker.player_tracker_gui.button_x": "X",
+      "gui.playertracker.player_tracker_gui.button_toggle_mode": "Toggle mode",
+      "gui.playertracker.player_tracker_gui.UseYCheckbox": "Use Y"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/playertracker/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/playertracker/init/PlayertrackerModScreens.java",
+      "src/main/java/net/mcreator/playertracker/init/PlayertrackerModMenus.java",
+      "src/main/java/net/mcreator/playertracker/init/PlayertrackerModBlocks.java",
+      "src/main/java/net/mcreator/playertracker/init/PlayertrackerModBlockEntities.java",
+      "src/main/java/net/mcreator/playertracker/init/PlayertrackerModItems.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/playertracker/PlayertrackerMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/playertracker/init/PlayertrackerModTabs.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Recipies",
+        "children": []
+      },
+      {
+        "name": "commandUpdateBlock",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "playertracker",
+    "modName": "PlayerTrackerBlock",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "modElementsPackage": "net.mcreator.playertracker"
+  },
+  "mcreatorVersion": 202600230420
+}

@@ -1,0 +1,10 @@
+{
+  "gui.newplayernames.name_chooser.button_h": "h",
+  "gui.newplayernames.test_gui.label_test": "Test",
+  "attribute.newplayernames.is_named": "Is Named",
+  "attribute.newplayernames.original_died": "Original Died",
+  "gamerule.playersUseOriginalName.description": "0 = always use random Name; 1 = Use own name once; 2 = Always use own Name",
+  "gamerule.playersUseOriginalName": "PlayersUseOriginalName",
+  "gamerule.opsUseOwnName": "Operator use own name.",
+  "gamerule.opsUseOwnName.description": "Allows Operator to always use their own names."
+}

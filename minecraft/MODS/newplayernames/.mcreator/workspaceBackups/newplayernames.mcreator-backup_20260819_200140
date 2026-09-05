@@ -1,0 +1,175 @@
+{
+  "mod_elements": [
+    {
+      "name": "OnPlayerJoinWorld",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_player_join_world",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/newplayernames/procedures/OnPlayerJoinWorldProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "IsNamed",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_named",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Genratename",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "genratename",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/newplayernames/procedures/GenratenameProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "OriginalDied",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "original_died",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "PlayersUseOriginalName",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "players_use_original_name",
+      "metadata": {
+        "type": "number",
+        "files": []
+      }
+    },
+    {
+      "name": "OpsUseOwnName",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ops_use_own_name",
+      "metadata": {
+        "type": "logic",
+        "files": []
+      }
+    },
+    {
+      "name": "OnPlayerDeath",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_player_death",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "endconquered",
+            "type": "logic"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/newplayernames/procedures/OnPlayerDeathProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SetNewName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_new_name",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "useOwnName",
+            "type": "logic"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/newplayernames/procedures/SetNewNameProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "gui.newplayernames.name_chooser.button_h": "h",
+      "gui.newplayernames.test_gui.label_test": "Test",
+      "attribute.newplayernames.is_named": "Is Named",
+      "attribute.newplayernames.original_died": "Original Died",
+      "gamerule.playersUseOriginalName.description": "0 \u003d always use random Name; 1 \u003d Use own name once; 2 \u003d Always use own Name",
+      "gamerule.playersUseOriginalName": "PlayersUseOriginalName",
+      "gamerule.opsUseOwnName": "Operator use own name.",
+      "gamerule.opsUseOwnName.description": "Allows Operator to always use their own names."
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/newplayernames/init/NewplayernamesModAttributes.java",
+      "src/main/java/net/mcreator/newplayernames/init/NewplayernamesModGameRules.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/java/net/mcreator/newplayernames/NewplayernamesMod.java",
+      "src/main/resources/pack.mcmeta"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "newplayernames",
+    "modName": "newPlayernames",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.newplayernames"
+  },
+  "mcreatorVersion": 202600230420
+}

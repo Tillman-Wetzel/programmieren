@@ -1,0 +1,12 @@
+{
+  "_fv": 89,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "PlayersUseOriginalName",
+    "description": "0 = always use random Name; 1 = Use own name once; 2 = Always use own Name",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 1
+  }
+}

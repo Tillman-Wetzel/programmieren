@@ -1,0 +1,637 @@
+{
+  "mod_elements": [
+    {
+      "name": "Kaugummi",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kaugummi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmodvontillman/item/KaugummiItem.java",
+          "src/main/resources/assets/testmod_von_tillman/models/item/kaugummi.json",
+          "src/main/resources/assets/testmod_von_tillman/items/kaugummi.json"
+        ]
+      },
+      "path": "~/Kaugummi"
+    },
+    {
+      "name": "BenutztesKaugummi",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "benutztes_kaugummi",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/testmod_von_tillman/items/benutztes_kaugummi.json",
+          "src/main/resources/assets/testmod_von_tillman/models/item/benutztes_kaugummi.json",
+          "src/main/java/net/mcreator/testmodvontillman/item/BenutztesKaugummiItem.java"
+        ]
+      },
+      "path": "~/Kaugummi"
+    },
+    {
+      "name": "EatUsedGum",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eat_used_gum",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testmodvontillman/procedures/EatUsedGumProcedure.java"
+        ]
+      },
+      "path": "~/Kaugummi"
+    },
+    {
+      "name": "Eatgum",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eatgum",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/testmod_von_tillman/advancement/eatgum.json"
+        ]
+      },
+      "path": "~/Kaugummi"
+    },
+    {
+      "name": "GiveGum",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "give_gum",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testmodvontillman/procedures/GiveGumProcedure.java"
+        ]
+      },
+      "path": "~/Kaugummi"
+    },
+    {
+      "name": "SetFoodLevel",
+      "type": "command",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "set_food_level",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmodvontillman/command/SetFoodLevelCommand.java"
+        ]
+      },
+      "path": "~/TillmansCarpet"
+    },
+    {
+      "name": "SetFoodLevelProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "set_food_level_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testmodvontillman/procedures/SetFoodLevelProcedureProcedure.java"
+        ]
+      },
+      "path": "~/TillmansCarpet"
+    },
+    {
+      "name": "GiveOrbitalStrike",
+      "type": "command",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "give_orbital_strike",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmodvontillman/command/GiveOrbitalStrikeCommand.java"
+        ]
+      },
+      "path": "~/Orbitals"
+    },
+    {
+      "name": "GiveGumCommand",
+      "type": "command",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "give_gum_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmodvontillman/command/GiveGumCommandCommand.java"
+        ]
+      },
+      "path": "~/Kaugummi"
+    },
+    {
+      "name": "TillmansCreativeTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tillmans_creative_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "CraftGum",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_gum",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/testmod_von_tillman/recipe/craft_gum.json",
+          "src/main/resources/data/testmod_von_tillman/advancement/recipes/craft_gum.json"
+        ]
+      },
+      "path": "~/Kaugummi"
+    },
+    {
+      "name": "GiveOrbitals",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "give_orbitals",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testmodvontillman/procedures/GiveOrbitalsProcedure.java"
+        ]
+      },
+      "path": "~/Orbitals"
+    },
+    {
+      "name": "SweetBerryTeaBag",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweet_berry_tea_bag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/testmod_von_tillman/recipe/sweet_berry_tea_bag.json"
+        ]
+      },
+      "path": "~/Tee"
+    },
+    {
+      "name": "GlowBerryTeaBag",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glow_berry_tea_bag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/testmod_von_tillman/recipe/glow_berry_tea_bag.json"
+        ]
+      },
+      "path": "~/Tee"
+    },
+    {
+      "name": "SweetBerryTeaBagItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweet_berry_tea_bag_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/testmod_von_tillman/items/sweet_berry_tea_bag_item.json",
+          "src/main/resources/assets/testmod_von_tillman/models/item/sweet_berry_tea_bag_item.json",
+          "src/main/java/net/mcreator/testmodvontillman/item/SweetBerryTeaBagItemItem.java"
+        ]
+      },
+      "path": "~/Tee"
+    },
+    {
+      "name": "GlowBerryTeaBagItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glow_berry_tea_bag_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/testmod_von_tillman/models/item/glow_berry_tea_bag_item.json",
+          "src/main/java/net/mcreator/testmodvontillman/item/GlowBerryTeaBagItemItem.java",
+          "src/main/resources/assets/testmod_von_tillman/items/glow_berry_tea_bag_item.json"
+        ]
+      },
+      "path": "~/Tee"
+    },
+    {
+      "name": "HotWater",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hot_water",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/testmod_von_tillman/models/item/hot_water_bucket.json",
+          "src/main/java/net/mcreator/testmodvontillman/fluid/HotWaterFluid.java",
+          "src/main/java/net/mcreator/testmodvontillman/item/HotWaterItem.java",
+          "src/main/resources/assets/testmod_von_tillman/items/hot_water_bucket.json",
+          "src/main/resources/assets/testmod_von_tillman/blockstates/hot_water.json",
+          "src/main/resources/assets/testmod_von_tillman/models/block/hot_water.json",
+          "src/main/java/net/mcreator/testmodvontillman/client/fluid/HotWaterFluidExtension.java",
+          "src/main/java/net/mcreator/testmodvontillman/block/HotWaterBlock.java",
+          "src/main/java/net/mcreator/testmodvontillman/fluid/types/HotWaterFluidType.java"
+        ]
+      },
+      "path": "~/Tee/hot_water"
+    },
+    {
+      "name": "HotWaterSpawnParticle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hot_water_spawn_particle",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testmodvontillman/procedures/HotWaterSpawnParticleProcedure.java"
+        ]
+      },
+      "path": "~/Tee/hot_water"
+    },
+    {
+      "name": "HotWaterDamageEntitys",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hot_water_damage_entitys",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testmodvontillman/procedures/HotWaterDamageEntitysProcedure.java"
+        ]
+      },
+      "path": "~/Tee/hot_water"
+    },
+    {
+      "name": "Teapot",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teapot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmodvontillman/block/TeapotBlock.java",
+          "src/main/resources/assets/testmod_von_tillman/models/item/teapot.json",
+          "src/main/resources/data/testmod_von_tillman/worldgen/configured_feature/teapot.json",
+          "src/main/resources/data/testmod_von_tillman/worldgen/placed_feature/teapot.json",
+          "src/main/resources/assets/testmod_von_tillman/models/block/teapot.json",
+          "src/main/resources/data/testmod_von_tillman/neoforge/biome_modifier/teapot_biome_modifier.json",
+          "src/main/resources/data/testmod_von_tillman/loot_table/blocks/teapot.json",
+          "src/main/resources/assets/testmod_von_tillman/blockstates/teapot.json",
+          "src/main/java/net/mcreator/testmodvontillman/block/entity/TeapotBlockEntity.java",
+          "src/main/resources/assets/testmod_von_tillman/items/teapot.json"
+        ]
+      },
+      "path": "~/Tee"
+    },
+    {
+      "name": "TeaDealer",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tea_dealer",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/testmod_von_tillman/trade_set/tea_dealer/level_4.json",
+          "src/main/resources/data/testmod_von_tillman/trade_set/tea_dealer/level_3.json",
+          "src/main/resources/data/testmod_von_tillman/trade_set/tea_dealer/level_1.json",
+          "src/main/resources/data/testmod_von_tillman/trade_set/tea_dealer/level_2.json",
+          "src/main/resources/data/testmod_von_tillman/trade_set/tea_dealer/level_5.json"
+        ]
+      },
+      "path": "~/Tee"
+    },
+    {
+      "name": "SweetBerryTeaBagForEmsTrade",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tea_dealer_trades",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/1/tea_dealer_trades_0.json",
+          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/3/tea_dealer_trades_5.json",
+          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/4/tea_dealer_trades_6.json",
+          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/3/tea_dealer_trades_4.json",
+          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/5/tea_dealer_trades_8.json",
+          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/1/tea_dealer_trades_1.json",
+          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/2/tea_dealer_trades_3.json",
+          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/4/tea_dealer_trades_7.json",
+          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/2/tea_dealer_trades_2.json",
+          "src/main/resources/data/testmod_von_tillman/villager_trade/tea_dealer/5/tea_dealer_trades_9.json"
+        ]
+      },
+      "path": "~/Tee"
+    },
+    {
+      "name": "TeaHutBarrel1",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tea_hut_barrel_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/testmod_von_tillman/loot_table/chests/teapot.json"
+        ]
+      },
+      "path": "~/Tee"
+    },
+    {
+      "name": "TeaHut",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tea_hut",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/testmod_von_tillman/worldgen/template_pool/tea_hut.json",
+          "src/main/resources/data/testmod_von_tillman/worldgen/structure/tea_hut.json",
+          "src/main/resources/data/testmod_von_tillman/worldgen/structure_set/tea_hut.json"
+        ]
+      },
+      "path": "~/Tee"
+    },
+    {
+      "name": "TeapotOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teapot_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/net/mcreator/testmodvontillman/procedures/TeapotOnBlockRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/Tee"
+    },
+    {
+      "name": "LetEveryoneFly",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "let_everyone_fly",
+      "metadata": {
+        "type": "logic",
+        "files": []
+      },
+      "path": "~/TillmansCarpet"
+    },
+    {
+      "name": "ToggleFly",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toggle_fly",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testmodvontillman/procedures/ToggleFlyProcedure.java"
+        ]
+      },
+      "path": "~/TillmansCarpet"
+    },
+    {
+      "name": "CanFly",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "can_fly",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/TillmansCarpet"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "VILLAGER_TRADES:testmod_von_tillman:tea_dealer/level_1": [
+      "~SweetBerryTeaBagForEmsTrade@tea_dealer_trades_1",
+      "~SweetBerryTeaBagForEmsTrade@tea_dealer_trades_0"
+    ],
+    "VILLAGER_TRADES:testmod_von_tillman:tea_dealer/level_2": [
+      "~SweetBerryTeaBagForEmsTrade@tea_dealer_trades_3",
+      "~SweetBerryTeaBagForEmsTrade@tea_dealer_trades_2"
+    ],
+    "VILLAGER_TRADES:testmod_von_tillman:tea_dealer/level_3": [
+      "~SweetBerryTeaBagForEmsTrade@tea_dealer_trades_5",
+      "~SweetBerryTeaBagForEmsTrade@tea_dealer_trades_4"
+    ],
+    "VILLAGER_TRADES:testmod_von_tillman:tea_dealer/level_4": [
+      "~SweetBerryTeaBagForEmsTrade@tea_dealer_trades_7",
+      "~SweetBerryTeaBagForEmsTrade@tea_dealer_trades_6"
+    ],
+    "VILLAGER_TRADES:testmod_von_tillman:tea_dealer/level_5": [
+      "~SweetBerryTeaBagForEmsTrade@tea_dealer_trades_9",
+      "~SweetBerryTeaBagForEmsTrade@tea_dealer_trades_8"
+    ],
+    "ITEMS:minecraft:piglin_loved": [
+      "~Kaugummi@CUSTOM:Kaugummi"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~HotWater@CUSTOM:HotWater"
+    ],
+    "POINTS_OF_INTEREST:minecraft:acquirable_job_site": [
+      "~TeaDealer@CUSTOM:TeaDealer"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~Teapot@CUSTOM:Teapot"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.testmod_von_tillman.kaugummi": "Gum",
+      "item.testmod_von_tillman.benutztes_kaugummi": "Eaten Gum",
+      "advancements.eatgum.descr": "Eat some Gum",
+      "advancements.eatgum.title": "Mmmhhf mmhf nam nam",
+      "item_group.testmod_von_tillman.tillmans_creative_tab": "Tillmans Coolste Mod",
+      "item.testmod_von_tillman.sweet_berry_tea_bag_item": "Sweetberry teabag",
+      "item.testmod_von_tillman.glow_berry_tea_bag_item": "Glowberry teabag",
+      "block.testmod_von_tillman.hot_water": "Hot Water",
+      "fluid_type.testmod_von_tillman.hot_water": "Hot Water",
+      "fluid.testmod_von_tillman.hot_water": "Hot Water",
+      "item.testmod_von_tillman.hot_water_bucket": "Hot Water Bucket",
+      "item.testmod_von_tillman.teapot": "Teapot",
+      "entity.villager.testmod_von_tillman.tea_dealer": "Tea Dealer",
+      "gamerule.testmod_von_tillman.letEveryoneFly": "Everybody can Fly",
+      "gamerule.testmod_von_tillman.letEveryoneFly.description": "Everyone has the ability to fly",
+      "gamerule.testmod_von_tillman.let_everyone_fly": "Everybody can Fly",
+      "gamerule.testmod_von_tillman.let_everyone_fly.description": "Everyone has the ability to fly",
+      "attribute.testmod_von_tillman.can_fly": "Can Fly"
+    },
+    "de_de": {
+      "item.testmod_von_tillman.kaugummi": "Kaugummi",
+      "item.testmod_von_tillman.benutztes_kaugummi": "Benutztes Kaugummi",
+      "advancements.eatgum.descr": "Iss ein Kaugummi",
+      "advancements.eatgum.title": "Mmmhhf mmhf nam nam",
+      "item_group.testmod_von_tillman.tillmans_creative_tab": "Tillmans Coolste Mod",
+      "item.testmod_von_tillman.sweet_berry_tea_bag_item": "Süßbeeren Teebeutel",
+      "item.testmod_von_tillman.glow_berry_tea_bag_item": "Leuchtbeeren Teebeutel",
+      "block.testmod_von_tillman.hot_water": "Heißes Wasser",
+      "fluid_type.testmod_von_tillman.hot_water": "Hot Water",
+      "fluid.testmod_von_tillman.hot_water": "Hot Water",
+      "item.testmod_von_tillman.hot_water_bucket": "Hot Water Bucket",
+      "item.testmod_von_tillman.teapot": "Teapot",
+      "entity.villager.testmod_von_tillman.tea_dealer": "Tea Dealer",
+      "gamerule.testmod_von_tillman.letEveryoneFly": "Everybody can Fly",
+      "gamerule.testmod_von_tillman.letEveryoneFly.description": "Everyone has the ability to fly",
+      "gamerule.testmod_von_tillman.let_everyone_fly": "Everybody can Fly",
+      "gamerule.testmod_von_tillman.let_everyone_fly.description": "Everyone has the ability to fly",
+      "attribute.testmod_von_tillman.can_fly": "Can Fly"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/testmodvontillman/init/TestmodVonTillmanModAttributes.java",
+      "src/main/java/net/mcreator/testmodvontillman/init/TestmodVonTillmanModFluidTypes.java",
+      "src/main/java/net/mcreator/testmodvontillman/init/TestmodVonTillmanModFluids.java",
+      "src/main/java/net/mcreator/testmodvontillman/init/TestmodVonTillmanModGameRules.java",
+      "src/main/java/net/mcreator/testmodvontillman/init/TestmodVonTillmanModVillagerProfessions.java",
+      "src/main/java/net/mcreator/testmodvontillman/init/TestmodVonTillmanModBlocks.java",
+      "src/main/java/net/mcreator/testmodvontillman/init/TestmodVonTillmanModBlockEntities.java",
+      "src/main/java/net/mcreator/testmodvontillman/init/TestmodVonTillmanModItems.java",
+      "src/main/java/net/mcreator/testmodvontillman/TestmodVonTillmanMod.java",
+      "src/main/java/net/mcreator/testmodvontillman/init/TestmodVonTillmanModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Kaugummi",
+        "children": []
+      },
+      {
+        "name": "TillmansCarpet",
+        "children": []
+      },
+      {
+        "name": "Orbitals",
+        "children": []
+      },
+      {
+        "name": "Tee",
+        "children": [
+          {
+            "name": "hot_water",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "testmod_von_tillman",
+    "modName": "Testmod Von Tillman",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-26.1.2",
+    "modElementsPackage": "net.mcreator.testmodvontillman"
+  },
+  "mcreatorVersion": 202600230420
+}
