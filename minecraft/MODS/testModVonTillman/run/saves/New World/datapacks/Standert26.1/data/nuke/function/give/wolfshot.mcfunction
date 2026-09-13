@@ -1,1 +1,0 @@
-give @s fishing_rod[custom_data={wolfshot:1b},custom_name={"italic":true,"text":"wolfshot"},rarity="rare",damage=63] 1
