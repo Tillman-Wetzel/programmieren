@@ -1,0 +1,35 @@
+cd ~/Desktop/programmieren/javaVokabeltrainer
+
+  # Erste Zeile von VokabelDB.java prüfen
+  head -n 5 EntityKlassen/VokabelDB.java
+
+  Wahrscheinlich hat VokabelDB.java die Package-Deklaration package EntityKlassen;
+
+  Dein MainTester.java muss dann so aussehen:
+
+  import java.sql.SQLException;
+  import EntityKlassen.VokabelDB;  // NICHT jdbc.VokabelDB
+
+  public class MainTester {
+      public static void main(String[] args) {
+          try {
+              VokabelDB vokabelDB1 = new VokabelDB();
+              System.out.println(vokabelDB1.getAnzahlVokabeln());
+          } catch (SQLException e) {
+              e.printStackTrace();
+          }
+      }
+  }
+
+  Kompilieren und Ausführen:
+
+  cd ~/Desktop/programmieren/javaVokabeltrainer
+
+  # Alle Dateien kompilieren mit MySQL JDBC Driver
+  javac -cp .:/usr/share/java/mysql-connector-java.jar EntityKlassen/*.java MainTester.java
+
+  # Programm ausführen
+  java -cp .:/usr/share/java/mysql-connector-java.jar MainTester
+
+  Ändere in deinem MainTester.java:
+  - import jdbc.VokabelDB; → import EntityKlassen.VokabelDB;
