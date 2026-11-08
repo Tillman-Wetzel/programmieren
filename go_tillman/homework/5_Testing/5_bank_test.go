@@ -22,7 +22,7 @@ func TestWithdraw(t *testing.T) {
 		wantErr    bool
 		wantReason string
 	}{
-		{"valid", 100, 50, false, "WithdrawalError"},
+		{"valid", 100, 50, false, ""},
 		{"negative", 100, -20, true, "WithdrawalError"},
 		{"insufficient", 100, 150, true, "WithdrawalError"},
 		{"limit", 2000, 1500, true, "WithdrawalError"},
@@ -34,26 +34,37 @@ func TestWithdraw(t *testing.T) {
 			// TODO: prüfen, ob ein Fehler kam, wenn einer erwartet wurde
 			//       (und keiner, wenn keiner erwartet wurde)
 
-			if err != nil {
-				if !tt.wantErr {
-					t.Fatalf("unexpected error: %v", err)
-				} else {
-					if errors.As(err, &tt.wantReason) {
-						t.Fatalf("Want error %v, got %v", tt.wantReason, err)
-					}
-				}
+			if !tt.wantErr && err != nil {
+				t.Fatalf("unexpected error: %v", err)
+			}
 
-			} else if err == nil && tt.wantErr {
+			if err == nil && tt.wantErr {
 				t.Fatalf("No Error, even though an Error was expected.")
+			}
 
+			if errors.As(err, &tt.wantReason) {
+				t.Fatalf("Want error %v, got %v", tt.wantReason, err)
+			}
+
+			if !tt.wantErr {
+				return // Happy Path: hier gibt es nichts mehr zu prüfen
+			}
+
+			// Aufgabe 4: kam ein Fehler, wenn einer erwartet war?
+			if tt.wantErr && err == nil {
+				t.Fatal("expected an error, got nil")
+			}
+			if !tt.wantErr && err != nil {
+				t.Fatalf("unexpected error: %v", err)
+			}
+			if !tt.wantErr {
+				return // Happy Path: hier gibt es nichts mehr zu prüfen
 			}
 
 		})
 	}
-}
 
-// Aufgabe 5 (Bonus): Prüfe mit errors.As, dass Reason stimmt.
-// Tipp: Ergänze in der Tabelle ein Feld wantReason string.
+}
 
 // Aufgabe 6: Starte go test -cover.
 // Welche Zeilen sind noch rot und warum? (go test -coverprofile=cover.out
