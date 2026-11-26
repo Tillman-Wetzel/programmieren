@@ -13,7 +13,7 @@ type basis struct {
 	kostensatz   float64
 }
 
-func (bb basis) KvNummer() string {
+func (bb basis) KVNummer() string {
 	return bb.kvNummer
 }
 
@@ -33,10 +33,22 @@ func (sb StandertBehandlung) GetKosten() float64 {
 	return sb.kostensatz
 }
 
+func NewStandertBehandlung(kvNummer string, beschreibung string, kostensatz float64) StandertBehandlung {
+	return StandertBehandlung{
+		basis{kvNummer: kvNummer, beschreibung: beschreibung, kostensatz: kostensatz},
+	}
+}
+
 type PhysioBehandlung struct {
 	basis
 }
 
 func (pb PhysioBehandlung) GetKosten() float64 {
 	return pb.kostensatz * 1.5
+}
+
+func NewPhysioBehandlung(kvNummer string, beschreibung string, kostensatz float64) PhysioBehandlung {
+	return PhysioBehandlung{
+		basis{kvNummer: kvNummer, beschreibung: beschreibung, kostensatz: kostensatz},
+	}
 }
