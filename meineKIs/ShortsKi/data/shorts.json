@@ -1,0 +1,85 @@
+
+{
+  "videos": [
+    {
+      "id": "vid_000001",
+      "status": "idea",
+      "created_at": "2026-11-26T17:30:00",
+      "updated_at": "2026-11-26T17:30:00",
+
+      "metadata": {
+        "title": "",
+        "description": "",
+        "tags": [],
+        "category": "storytelling",
+        "language": "de",
+        "format": "short",
+        "duration_seconds": 0
+      },
+
+      "content": {
+        "topic": "",
+        "idea": "",
+        "hook": "",
+        "story": "",
+        "script": "",
+        "scenes": []
+      },
+
+      "assets": {
+        "thumbnail": null,
+        "images": [],
+        "audio": [],
+        "music": []
+      },
+
+      "production": {
+        "tts_provider": "",
+        "tts_voice": "",
+        "image_model": "",
+        "video_model": "",
+        "resolution": "1080x1920",
+        "fps": 30,
+        "render_path": null
+      },
+
+      "youtube": {
+        "video_id": null,
+        "url": null,
+        "visibility": "private",
+        "uploaded_at": null,
+        "published_at": null,
+        "approved": false
+      },
+
+      "analytics": {
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "watch_time_minutes": 0,
+        "average_view_duration": 0,
+        "average_percentage_viewed": 0,
+        "subscribers_gained": 0,
+        "last_updated": null
+      },
+
+      "quality": {
+        "spelling_checked": false,
+        "audio_checked": false,
+        "images_checked": false,
+        "copyright_checked": false,
+        "policy_checked": false,
+        "score": null
+      },
+
+      "learning": {
+        "strategy_id": null,
+        "successful_elements": [],
+        "failed_elements": [],
+        "lessons": []
+      },
+
+      "errors": []
+    }
+  ]
+}

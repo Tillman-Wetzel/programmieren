@@ -14,6 +14,12 @@ func main() {
 	fmt.Println(mySlice)
 }
 
+
+
+
+
+
+
 // func main() {
 // 	treasures := []int{15, 42, 7, 88, 23, 42, 91, 5, 67, 42}
 

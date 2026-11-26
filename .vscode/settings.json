@@ -30,5 +30,10 @@
             "username": "root"
         }
     ],
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/usr/share/java/mysql-connector-java.jar"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }
